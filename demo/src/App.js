@@ -4,6 +4,7 @@ import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-icons'
 import NavBar from './Components/Navbar';
+import Home from './Pages/Home';
 
 function App() {
   return (
@@ -11,8 +12,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-
-          {/* <Route path="/" element={<}/> */}
+          <Route path="/home" element={<Home />}/>
         </Routes>
       </BrowserRouter>
       <Footer />

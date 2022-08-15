@@ -11,9 +11,9 @@ function NavBar() {
   return (
     <>
       
-        <Navbar bg="light" expand='xxl' className="mb-3">
+        <Navbar bg="white" expand='xxl' className="mb-0">
           <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/home">
                 <img src='./Images/App201-logo.jpg' alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} />
@@ -31,10 +31,10 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">الرئيسية</Nav.Link>
-                  <Nav.Link href="#action2">خدماتنا</Nav.Link>
-                  <Nav.Link href="#action3">من نحن</Nav.Link>
-                  <Nav.Link href="#action4">تواصل معنا</Nav.Link>
+                  <Nav.Link href="/home"> <h4 style={{}}>الرئيسية</h4></Nav.Link>
+                  <Nav.Link href="#action2"><h4>خدماتنا </h4></Nav.Link>
+                  <Nav.Link href="#action3"><h4>من نحن </h4></Nav.Link>
+                  <Nav.Link href="#action4"><h4>تواصل معنا </h4></Nav.Link>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-xxl`}
@@ -55,7 +55,6 @@ function NavBar() {
 
           </Container>
         </Navbar>
-
     </>
   );
 }
