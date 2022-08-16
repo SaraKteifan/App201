@@ -7,6 +7,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './CSS/Navbar.css'
 import {useState, useEffect} from 'react'
+import './CSS/Navbar.css';
+import AnimatedBg from "react-animated-bg";
+import TopButton from './TopButton';
 
 function NavBar() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1400);
@@ -21,12 +24,16 @@ function NavBar() {
   });
 
   return (
-    <>
+    <div className='top-plane'>
       
         <Navbar bg="black" expand='xxl' className="mb-3" id='navbar'>
           <Container>
           <Navbar.Brand href="#">
                 <img src='./Images/logoo.png' alt='App201 Logo' id='nav-logo'></img>
+        <Navbar bg="white" expand='xxl' className="mb-0">
+          <Container>
+          <Navbar.Brand href="/home">
+                <img src='./Images/App201-logo.jpg' alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black' />
             
@@ -48,6 +55,10 @@ function NavBar() {
                   <Nav.Link href="#action2" className={isDesktop?'text-white':'text-black'}>خدماتنا</Nav.Link>
                   <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}>من نحن</Nav.Link>
                   <Nav.Link href="#action4" className={isDesktop?'text-white':'text-black'}>تواصل معنا</Nav.Link>
+                  <Nav.Link href="/home"> <h4 style={{}}>الرئيسية</h4></Nav.Link>
+                  <Nav.Link href="#cons"><h4>خدماتنا </h4></Nav.Link>
+                  <Nav.Link href="#action3"><h4>من نحن </h4></Nav.Link>
+                  <Nav.Link href="#action4"><h4>تواصل معنا </h4></Nav.Link>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-xxl`}
@@ -64,12 +75,10 @@ function NavBar() {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            
-
           </Container>
         </Navbar>
-
-    </>
+        <TopButton />
+    </div>
   );
 }
 

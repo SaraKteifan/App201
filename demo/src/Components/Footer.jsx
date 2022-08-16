@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <>
+        <div className='bottom-plane'>
             <footer className="bg-dark text-center text-white">
                 {/* Grid container */}
                 <div className="container p-4 pb-0">
@@ -11,7 +11,8 @@ function Footer() {
                         {/* Facebook */}
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
-                            href="#!"
+                            href="https://www.facebook.com/com.App201"
+                            target='_blank'
                             role="button"
                             title='فيسبوك'
                         >
@@ -20,7 +21,8 @@ function Footer() {
                         {/* WhatsApp */}
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
-                            href="#!"
+                            href="https://wa.me/962790208181"
+                            target='_blank'
                             role="button"
                             title='واتساب'
                         >
@@ -30,6 +32,7 @@ function Footer() {
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
                             href="#!"
+                            target='_blank'
                             role="button"
                             title='البريد الإلكتروني'
                         >
@@ -39,6 +42,7 @@ function Footer() {
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
                             href="#!"
+                            target='_blank'
                             role="button"
                             title='انستجرام'
                         >
@@ -48,6 +52,7 @@ function Footer() {
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
                             href="#!"
+                            target='_blank'
                             role="button"
                             title='لينكدن'
                         >
@@ -69,7 +74,7 @@ function Footer() {
                 {/* Copyright */}
             </footer>
 
-        </>
+        </div>
     )
 }
 
