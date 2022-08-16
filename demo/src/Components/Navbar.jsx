@@ -5,11 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import './CSS/Navbar.css'
+import './CSS/Navbar.css';
+import AnimatedBg from "react-animated-bg";
+import TopButton from './TopButton';
+
 
 function NavBar() {
   return (
-    <>
+    <div className='top-plane'>
       
         <Navbar bg="white" expand='xxl' className="mb-0">
           <Container>
@@ -32,7 +35,7 @@ function NavBar() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/home"> <h4 style={{}}>الرئيسية</h4></Nav.Link>
-                  <Nav.Link href="#action2"><h4>خدماتنا </h4></Nav.Link>
+                  <Nav.Link href="#cons"><h4>خدماتنا </h4></Nav.Link>
                   <Nav.Link href="#action3"><h4>من نحن </h4></Nav.Link>
                   <Nav.Link href="#action4"><h4>تواصل معنا </h4></Nav.Link>
                   {/* <NavDropdown
@@ -55,7 +58,8 @@ function NavBar() {
 
           </Container>
         </Navbar>
-    </>
+        <TopButton />
+    </div>
   );
 }
 
