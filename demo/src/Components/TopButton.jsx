@@ -32,7 +32,7 @@ function TopButton() {
         textAlign      : 'center',
         }}
         >
-        <i className="fa-solid fa-arrow-up fa-xl"></i>
+        <i class="fa-solid fa-angles-up"></i>
         </button>
         </>
     )

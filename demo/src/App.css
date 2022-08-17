@@ -17,6 +17,7 @@ html[dir="rtl"] #menu {
   z-index: -100;
 }
 
+
 #contact-header{
   width: 100%;
 }
@@ -66,4 +67,98 @@ html[dir="rtl"] #menu {
   text-decoration: none;
   color: black;
   font-size: 40px;
+}
+.image-stack {
+  position: relative;
+  max-width:670px;
+  top: 0;
+  left: 0;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+.image-stack-text{
+  margin-top:8%;
+}
+.image-left {
+  position: relative;
+  max-width:50%;
+  top: 0;
+  left: 0%;
+  z-index: 1;
+}
+.image-left-middle {
+  position: relative;
+  max-width:75%;
+  top: 0;
+  left: 0%;
+  z-index: 1;
+}
+.image-left-last {
+  position: relative;
+  max-width:75%;
+  top: 0;
+  left: 0%;
+  z-index: 1;
+}
+.image-right {
+  position: absolute;
+  max-width:50%;
+  top: 50%;
+  left: 30%;
+  z-index: 3;
+}
+.image-right-middle {
+  position: absolute;
+  max-width:100%;
+  top: 50%;
+  left: 30%;
+  z-index: 3;
+}
+.image-right-last {
+  position: absolute;
+  max-width:75%;
+  top: 50%;
+  left: 0%;
+  z-index: 3;
+}
+/* line through didnt work */
+
+/* .title-text {
+  overflow: hidden;
+  text-align: center;
+}
+
+.title-text:before,
+.title-text:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.title-text:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.title-text:after {
+  left: 0.5em;
+  margin-right: -50%;
+} */
+
+/* kkkkk */
+.title-text {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+.title-text span { 
+   background:#fff; 
+   padding:0 10px; 
 }
