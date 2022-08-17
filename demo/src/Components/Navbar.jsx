@@ -23,6 +23,8 @@ function NavBar() {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
+console.log(window.innerWidth);
+
   return (
     <>
         <Navbar bg="black" expand='xxl' className="mb-3" id='navbar'>
@@ -43,10 +45,12 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
+
                   <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}><h4>الرئيسية</h4></Nav.Link>
-                  <Nav.Link href="#cons" className={isDesktop?'text-white':'text-black'}><h4>خدماتنا</h4></Nav.Link>
+                  <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'}><h4>خدماتنا</h4></Nav.Link>
                   <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}><h4>من نحن</h4></Nav.Link>
-                  <Nav.Link href="#action4" className={isDesktop?'text-white':'text-black'}><h4>تواصل معنا</h4></Nav.Link>
+                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'}><h4>تواصل معنا</h4></Nav.Link>
+
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-xxl`}
