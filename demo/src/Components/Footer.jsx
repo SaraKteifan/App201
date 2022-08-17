@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <div className='bottom-plane'>
-            <footer className="bg-dark text-center text-white">
+            <footer className="bg-black text-center text-white">
                 {/* Grid container */}
                 <div className="container p-4 pb-0">
                     {/* Section: Social media */}
@@ -41,7 +41,7 @@ function Footer() {
                         {/* Instagram */}
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
-                            href="#!"
+                            href="https://www.instagram.com/accounts/login/?next=/app201_for_programing/"
                             target='_blank'
                             role="button"
                             title='انستجرام'
