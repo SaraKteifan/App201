@@ -23,6 +23,8 @@ function NavBar() {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
+console.log(window.innerWidth);
+
   return (
     <>
         <Navbar bg="black" expand='xxl' className="mb-3" id='navbar'>
@@ -47,14 +49,10 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#/" className={isDesktop?'text-white':'text-black'}>الرئيسية</Nav.Link>
-                  <Nav.Link href="#cons" className={isDesktop?'text-white':'text-black'}>خدماتنا</Nav.Link>
-                  <Nav.Link href="#/About" className={isDesktop?'text-white':'text-black'}>من نحن</Nav.Link>
-                  <Nav.Link href="#action4" className={isDesktop?'text-white':'text-black'}>تواصل معنا</Nav.Link>
-                  <Nav.Link href="#/"> <h2 style={{}}>الرئيسية</h2></Nav.Link>
-                  <Nav.Link href="#cons"><h2>خدماتنا </h2></Nav.Link>
-                  <Nav.Link href="#action3"><h2>من نحن </h2></Nav.Link>
-                  <Nav.Link href="#action2"><h2>تواصل معنا </h2></Nav.Link>
+                  <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}>الرئيسية</Nav.Link>
+                  <Nav.Link href="/cons" className={isDesktop?'text-white':'text-black'}>خدماتنا</Nav.Link>
+                  <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}>من نحن</Nav.Link>
+                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'}>تواصل معنا</Nav.Link>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-xxl`}
