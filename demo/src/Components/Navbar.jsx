@@ -23,7 +23,7 @@ function NavBar() {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
-console.log(window.innerWidth);
+  console.log(window.innerWidth);
 
   return (
     <>
