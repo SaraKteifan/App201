@@ -46,10 +46,10 @@ function NavBar() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
 
-                  <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}><h4>الرئيسية</h4></Nav.Link>
-                  <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'}><h4>خدماتنا</h4></Nav.Link>
-                  <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}><h4>من نحن</h4></Nav.Link>
-                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'}><h4>تواصل معنا</h4></Nav.Link>
+                  <Nav.Link href="/" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>الرئيسية</h4></Nav.Link>
+                  <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>خدماتنا</h4></Nav.Link>
+                  <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>من نحن</h4></Nav.Link>
+                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>تواصل معنا</h4></Nav.Link>
 
                   {/* <NavDropdown
                     title="Dropdown"
