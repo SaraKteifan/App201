@@ -27,7 +27,7 @@ function NavBar() {
 
   return (
     <>
-        <Navbar bg="black" expand='xxl' className="mb-3" id='navbar'>
+        <Navbar expand='xxl' className="mb-3" id='navbar'>
           <Container>
           <Navbar.Brand href="#/">
                 <img src='./Images/logoo.png' alt='App201 Logo' id='nav-logo'></img>
@@ -44,12 +44,14 @@ function NavBar() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-3" lang='ar' id="nav_tabs">
 
-                  <Nav.Link href="/" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>الرئيسية</h4></Nav.Link>
-                  <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>خدماتنا</h4></Nav.Link>
-                  <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>من نحن</h4></Nav.Link>
-                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'} style={{width: '10%'}}><h4>تواصل معنا</h4></Nav.Link>
+
+                  <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}><h5>الصفحة الرئيسية</h5></Nav.Link>
+                  <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'}><h5>خدماتنا</h5></Nav.Link>
+                  <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}><h5>من نحن</h5></Nav.Link>
+                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'}><button id='nav-contactBTN'><h5>تواصل معنا</h5></button></Nav.Link>
+
 
                   {/* <NavDropdown
                     title="Dropdown"

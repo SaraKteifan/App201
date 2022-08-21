@@ -1,4 +1,5 @@
 import React from 'react'
+import './CSS/Header.css'
 
 function Header() {
     return (
@@ -6,18 +7,21 @@ function Header() {
             <div id='hero-div'>
                 <div id='header-div'>
                     <h2>
-                        <span style={{fontSize: '3rem'}}>App201  <br /></span> 
-                         المكان الأمثل لتصميم مواقع الويب وتطبيقات الهواتف وكل ما يتعلق بالأمور البرمجية
-                    </h2>
-                    <a href='/Services' className="btn btn-dark">استكشف خدماتنا</a>
+                        <span style={{fontSize: '3rem'}}>App201  <br /></span> <br></br>
+                         <span lang='ar'>المكان الأمثل لبناء موقعك الإلكتروني، تطبيقات الهاتف ومساعدتك في كل ما يتعلق بالبرمجة
+                    </span>
+                    </h2><br></br>
+                    <button id='headerBTN' lang='ar'><a href='/Services'>تواصل معنا</a></button>
                 </div>
                 <div id='header-video'>
                     <video
-                        src='https://vod-progressive.akamaized.net/exp=1660722599~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3752%2F14%2F368763065%2F1526588504.mp4~hmac=411a9226bead28da01eaaae25d8db6b28d71f99f8d724c528730f71bff735554/vimeo-prod-skyfire-std-us/01/3752/14/368763065/1526588504.mp4'
+                        src='./Videos/header-video.mp4'
                         autoplay='true'
                         muted
                         loop
                     />
+                    <img src='./Images/adminDashboard.png' alt='Header Image' id='img-1'></img>
+                    <img src='./Images/website.png' alt='Header Image' id='img-2'></img>
                 </div>
             </div>
         </>

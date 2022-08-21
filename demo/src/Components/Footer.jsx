@@ -1,9 +1,10 @@
 import React from 'react'
+import './CSS/Footer.css'
 
 function Footer() {
     return (
         <div className='bottom-plane'>
-            <footer className="bg-black text-center text-white">
+            <footer className="text-center text-white">
                 {/* Grid container */}
                 <div className="container p-4 pb-0">
                     {/* Section: Social media */}
