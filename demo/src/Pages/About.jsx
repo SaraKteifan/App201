@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import Team from '../Components/Team'
 
 function About() {
   return (
@@ -22,6 +23,7 @@ function About() {
       <Row className='mt-5'>
         <img src="https://th.bing.com/th/id/R.6023510b397151465972307ef0ccd3d3?rik=12u2NSK0YeBDrg&pid=ImgRaw&r=0" alt="من نحن" width='100%'/>
       </Row>
+      <Team />
     </Container>
     </>
   )

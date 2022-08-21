@@ -8,10 +8,12 @@ function Header() {
                 <div id='header-div'>
                     <h2>
                         <span style={{fontSize: '3rem'}}>App201  <br /></span> <br></br>
-                         <span lang='ar'>المكان الأمثل لبناء موقعك الإلكتروني، تطبيقات الهاتف ومساعدتك في كل ما يتعلق بالبرمجة
+                        <span lang='ar'>المكان الأمثل لبناء موقعك الإلكتروني، تطبيقات الهاتف ومساعدتك في كل ما يتعلق بالبرمجة
                     </span>
                     </h2><br></br>
                     <button id='headerBTN' lang='ar'><a href='/Services'>تواصل معنا</a></button>
+                    <br /><br />
+                    <div className='arr'><i class="fa-solid fa-angles-down down"></i></div>
                 </div>
                 <div id='header-video'>
                     <video

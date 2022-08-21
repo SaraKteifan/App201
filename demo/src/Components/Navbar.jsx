@@ -29,7 +29,7 @@ function NavBar() {
     <>
         <Navbar expand='xxl' className="mb-3" id='navbar'>
           <Container>
-          <Navbar.Brand href="#/">
+          <Navbar.Brand href="/">
                 <img src='./Images/logoo.png' alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black' />
