@@ -21,7 +21,7 @@ function TopButton() {
         <>        
         {/* 👇️ scroll to top on button click */}
         <button
-        className='btn rounded-circle btn-warning btn-xl border-0'
+        className='btn rounded-circle btn-xl border-0'
         onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}
         style  ={{
         display        : dis,
@@ -30,6 +30,7 @@ function TopButton() {
         right          : '40px',
         color          : '#fff',
         textAlign      : 'center',
+        backgroundColor: '#FCC719',
         }}
         >
         <i class="fa-solid fa-angles-up"></i>
