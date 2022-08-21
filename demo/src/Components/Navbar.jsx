@@ -46,10 +46,12 @@ function NavBar() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3" lang='ar' id="nav_tabs">
 
+
                   <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}><h5>الصفحة الرئيسية</h5></Nav.Link>
                   <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'}><h5>خدماتنا</h5></Nav.Link>
                   <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}><h5>من نحن</h5></Nav.Link>
                   <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'}><button id='nav-contactBTN'><h5>تواصل معنا</h5></button></Nav.Link>
+
 
                   {/* <NavDropdown
                     title="Dropdown"
