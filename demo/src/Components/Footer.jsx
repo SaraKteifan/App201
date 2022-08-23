@@ -68,8 +68,11 @@ function Footer() {
                     className="text-center p-3"
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
                 >
-                     2022 ©
-                        جميع الحقوق محفوظة لدى App201
+                     2022 ©&#160;
+                    <span lang='ar'>
+                        جميع الحقوق محفوظة لدى 
+                    </span>
+                    &nbsp;App201
                     
                 </div>
                 {/* Copyright */}

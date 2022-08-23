@@ -4,7 +4,7 @@ import { Row,Card,Col,Container } from 'react-bootstrap';
 function Cons() {
   return (
     <>
-    <Container className='mt-5 ml-2' id='cons'>
+    <Container className='mt-5 ml-2' id='cons' lang='ar'>
         <div className='mb-3 d-flex justify-content-center'>
             <h2 className='title-text'><span>ما الذي يميزنا</span></h2>
         </div>
@@ -20,7 +20,7 @@ function Cons() {
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title>تصميم مميز</Card.Title>
-                    <Card.Text>
+                    <Card.Text >
                     تصميم مميز يناسب جميع احتياجاتك وامكانية الخدمة ما بعد البيع نحن المميزون والأفضل في هذا المجال ولن تندم على التعامل معنا مستعدون بأي وقت
                     </Card.Text>
                     </div>

@@ -7,7 +7,7 @@ function Contact() {
                 <img src="./Images/Aqaba.jpg" alt="Aqaba" />
             </div>
             <div id='contact-div'>
-                <div id='contact-text'>
+                <div id='contact-text' lang='ar'>
                     <h1>متواجدون دائماً لمساعدتك</h1>
                     <h4>لديك سؤال؟ تريد الاستفسار عن إحدى خدماتنا أو حجزها؟ لا تتردد بالتواصل معنا عن طريق أي من الوسائل التالية</h4>
                 </div>

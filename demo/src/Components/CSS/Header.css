@@ -13,7 +13,6 @@
 }
 #header-div h2{
     width: 70%;
-    /* margin: auto; */
 }
 #headerBTN{
     background-color: #FCC719;
@@ -47,3 +46,20 @@
     left: 30%;
     top: -10%;
 }
+@media only screen and (max-width: 660px) {
+    #header-div,#header-video {
+        width:100%;
+    }
+    #hero-div{
+        flex-wrap: wrap;
+    }
+    #header-video video{
+        left: -20%;
+    }
+    #header-video #img-1{
+        left: -5%;
+    }
+    #header-video #img-2{
+        left: 20%;
+    }
+  }
