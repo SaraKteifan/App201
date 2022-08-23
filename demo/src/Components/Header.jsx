@@ -7,6 +7,7 @@ import AnimatedText from 'react-animated-text-content';
 function Header() {
     return (
         <>
+
             <Row xs={1} lg={2} className='m-5 py-5 '>
                 <Col className='container d-grid justify-content-center'>
                     <h1 className='d-flex justify-content-center align-items-center' style={{fontSize: '3rem'}}>App201</h1>
@@ -45,6 +46,7 @@ function Header() {
                     </div>
                 </Col>
             </Row>
+
         </>
     )
 }

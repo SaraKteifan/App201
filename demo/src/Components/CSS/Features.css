@@ -1,0 +1,12 @@
+#features{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+#features div{
+    text-align: center;
+    font-size: 40px;
+}
+#features div i{
+    color: #170039;
+}

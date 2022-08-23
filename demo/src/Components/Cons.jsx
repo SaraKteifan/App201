@@ -4,8 +4,10 @@ import { Row,Card,Col,Container } from 'react-bootstrap';
 function Cons() {
   return (
     <>
-    <Container className='mt-5 ml-2' id='cons'>
-        {/* <div className='mb-3 d-flex justify-content-center'>
+
+    <Container className='mt-5 ml-2' id='cons' lang='ar'>
+        <div className='mb-3 d-flex justify-content-center'>
+
             <h2 className='title-text'><span>ما الذي يميزنا</span></h2>
         </div> */}
         <Row xs={1} md={2} lg={3} align='center'>
@@ -19,8 +21,10 @@ function Cons() {
                     <Card.Img variant="top" src='images/Pen.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
+
                     <Card.Title lang='ar'>تصميم مميز</Card.Title>
                     <Card.Text lang='ar'>
+
                     تصميم مميز يناسب جميع احتياجاتك وامكانية الخدمة ما بعد البيع نحن المميزون والأفضل في هذا المجال ولن تندم على التعامل معنا مستعدون بأي وقت
                     </Card.Text>
                     </div>

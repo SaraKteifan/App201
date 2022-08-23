@@ -6,10 +6,13 @@
     padding: 0;
     background-color: #170039;
     margin: 0;
-    /* position: fixed;
+}
+#navbarScroll{
+    background-color: #fff;
+    position: fixed;
     width: 100%;
     padding: 10px;
-    z-index: 1; */
+    z-index: 1;
 }
 #nav_tabs{
     align-items: center;

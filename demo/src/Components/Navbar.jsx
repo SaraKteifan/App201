@@ -14,6 +14,25 @@ import WhatsappButton from './WhatsappButton';
 
 function NavBar() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1400);
+  const [navId,setNavId]=useState('navbar');
+  const [navbarLogo, setNavbarLogo]= useState('white-logo.png')
+
+    // When the user scrolls down 20px from the top of the document, change navbar
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            setNavId("navbarScroll");
+            setDesktop(false);
+            setNavbarLogo('App201-logo-.png');
+        } else {
+            setNavId("navbar");
+            setDesktop(true);
+            setNavbarLogo('white-logo.png');
+        }
+    }
+    
+    useEffect(()=>{
+        window.onscroll = function() {scrollFunction()};
+    },[navId])
 
   const updateMedia = () => {
     setDesktop(window.innerWidth > 1400);
@@ -28,10 +47,11 @@ function NavBar() {
 
   return (
     <>
-        <Navbar expand='xxl' className="mb-3" id='navbar'>
+        <Navbar expand='xxl' className="mb-3" id={navId}>
           <Container>
-          <Navbar.Brand href="/">
-                <img src='./Images/logoo.png' alt='App201 Logo' id='nav-logo'></img>
+
+          <Navbar.Brand href="#/">
+                <img src={`./Images/${navbarLogo}`} alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black' />
             <Navbar.Offcanvas
