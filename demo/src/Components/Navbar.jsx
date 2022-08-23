@@ -10,6 +10,7 @@ import {useState, useEffect} from 'react'
 import './CSS/Navbar.css';
 import AnimatedBg from "react-animated-bg";
 import TopButton from './TopButton';
+import WhatsappButton from './WhatsappButton';
 
 function NavBar() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1400);
@@ -50,7 +51,7 @@ function NavBar() {
                   <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}><h5>الصفحة الرئيسية</h5></Nav.Link>
                   <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'}><h5>خدماتنا</h5></Nav.Link>
                   <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}><h5>من نحن</h5></Nav.Link>
-                  <Nav.Link href="/Contact" className={isDesktop?'text-white':'text-black'}><button id='nav-contactBTN'><h5>تواصل معنا</h5></button></Nav.Link>
+                  <Nav.Link href="/Contact" className={isDesktop?'text-white mb-2':'text-black'} id='nav-contactBTN'><h5 className='mb-5'>تواصل معنا</h5></Nav.Link>
 
 
                   {/* <NavDropdown
@@ -72,6 +73,7 @@ function NavBar() {
           </Container>
         </Navbar>
         <TopButton />
+        <WhatsappButton />
     </>
   );
 }

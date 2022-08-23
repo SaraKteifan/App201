@@ -1,11 +1,21 @@
+@font-face {
+    font-family: 'GESSTwoLight-Light';
+    src: url("./GESSTwoLight-Light.ttf") format("truetype");
+}
 #hero-div{
     width: 100%;
-    background-color: #170039;
+    /* background-color: #170039; */
     display: flex;
+}
+:lang(ar) {
+    font-family:  'GESSTwoLight-Light'
+}
+.bb{
+    background-color: rgb(190, 255, 247);
 }
 #header-div{
     width: 50%; 
-    color: white;
+    /* color: white; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,23 +26,25 @@
     /* margin: auto; */
 }
 #headerBTN{
-    background-color: #FCC719;
+    /* background-color: #FCC719; */
     border-radius: 5px;
     padding: 5px 10px;
     width: 25%;
 }
 #headerBTN a{
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
 }
 #header-video{
-    width: 50%;
+    /* width: 75%; */
+    display: flex;
+    justify-content: center;
 }
 #header-video video{
-    width: 70%;
-    position: relative;
+    width: 75%;
+    /* position: relative;
     left: -10%;
-    top: 10%;
+    top: 10%; */
 }
 #header-video img{
     width: 50%;
@@ -47,3 +59,68 @@
     left: 30%;
     top: -10%;
 }
+
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: auto;
+    }
+    30% {
+      top: 0.2rem;
+      width: auto;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: auto;
+    }
+    62% {
+      top: -4.5rem;
+      width: auto;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: auto;
+    }
+    95% {
+      top: -9rem;
+      width: auto;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }

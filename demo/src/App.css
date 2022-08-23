@@ -1,16 +1,31 @@
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+  /* font-family: 'Amiri', serif; */
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+  /*font-family: 'Droid Arabic Naskh', serif;*/
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+  /* font-family: 'Lateef', serif; */
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+  /*font-family: 'Scheherazade', serif;*/
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/thabit.css);
+  /* font-family: 'Thabit', serif; */
+  @font-face {
+    font-family: 'GESSTwoLight-Light';
+    src: url("../public/Fonts/GESSTwoLight-Light.ttf") format("truetype");
+}
 html[dir="rtl"] #menu {
   float: right;
+  
 }
 body{
-  font-family: Arial,Helvetica,sans-serif;
+  font-family:  GESSTwoLight-Light, serif;
+  /* font-size:50px; */
 }
 :lang(ar) {
-  font-family: 'Arvo', serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Ramaraja', serif;
-  font-family: 'Sansita Swashed', cursive;
+  font-family:  'GESSTwoLight-Light', serif;
 }
 #myframe {
   width: 100%;
@@ -145,6 +160,9 @@ body{
   font-size: 30px;
   animation : down 1.5s linear infinite; 
 }
+.resize{
+  animation : resize 1.5s linear infinite; 
+}
 
 @keyframes down {
   0%, 100% {
@@ -161,4 +179,12 @@ body{
   50% {
       transform: translateY(0%);
   }
+}
+@keyframes resize {
+  0%, 100% {
+      padding: 15px;
+  }
+  50% {
+      padding: 10px;
+    }
 }
