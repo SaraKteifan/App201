@@ -18,9 +18,13 @@
     align-items: center;
 }
 #nav-contactBTN{
-    align-self: center;
-    background-color: #FCC719;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #fff;
+    /* align-self: center; */
+    background-color: #c8f9ff;
+    border-radius: 5%;
+    height: 40px;
+    /* padding: 5px 10px; */
+    color: black;
+}
+#nav-contactBTN h5{
+    color: black;
 }

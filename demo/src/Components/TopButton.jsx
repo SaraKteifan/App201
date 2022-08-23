@@ -21,7 +21,7 @@ function TopButton() {
         <>        
         {/* 👇️ scroll to top on button click */}
         <button
-        className='btn rounded-circle btn-xl border-0'
+        className='btn rounded-circle btn-xl border-0 up'
         onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}
         style  ={{
         display        : dis,

@@ -1,13 +1,33 @@
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+  /* font-family: 'Amiri', serif; */
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+  /*font-family: 'Droid Arabic Naskh', serif;*/
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+  /* font-family: 'Lateef', serif; */
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+  /*font-family: 'Scheherazade', serif;*/
+  
+  @import url(https://fonts.googleapis.com/earlyaccess/thabit.css);
+  /* font-family: 'Thabit', serif; */
+  @font-face {
+    font-family: 'GESSTwoLight-Light';
+    src: url("../public/Fonts/GESSTwoLight-Light.ttf") format("truetype");
+}
 html[dir="rtl"] #menu {
   float: right;
+  
 }
 
 body{
-  font-family: Arial,Helvetica,sans-serif;
+  font-family:  GESSTwoLight-Light, serif;
+  /* font-size:50px; */
 }
 
 :lang(ar) {
-  font-family: 'GE SS Two Bold';
+  font-family:  'GESSTwoLight-Light', serif;
 }
 
 #myframe {
@@ -17,6 +37,7 @@ body{
   z-index: -100;
 }
 
+
 #contact-header{
   width: 100%;
 }
@@ -25,36 +46,39 @@ body{
   width: 100%;
 }
 
+
 #contact-div{
+  background-image: url("../public/Images/Aqaba.jpg");
+  background-size:cover;
+  height: 100vh;
+  
+}
+#Contact-text{
   background-color: rgba(255,255,255, 0.9);
-  width: 80%;
   margin: auto;
   position: relative;
-  top: -500px;
   border-radius:20px;
 }
 
-#contact-div hr{
+#Contact-text hr{
   margin: 0;
 }
-
-#contact-div h1,h4{
+#Contact-text h1,h4{
   padding: 3%;
   text-align: center;
 }
-
-#contact-div h4{
+#Contact-text h4{
   align-self: flex-end;
 }
-
-#contact-div div{
+#Contact-text div{
   padding: 1%;
   display: flex;
   gap: 5%;
 
 }
 
-#contact-div div a{
+#Contact-text div a{
+
   width: 30%;
   color: black;
   text-decoration: none;
@@ -136,35 +160,6 @@ body{
   left: 0%;
   z-index: 3;
 }
-/* line through didnt work */
-
-/* .title-text {
-  overflow: hidden;
-  text-align: center;
-}
-
-.title-text:before,
-.title-text:after {
-  background-color: #000;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}
-
-.title-text:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-.title-text:after {
-  left: 0.5em;
-  margin-right: -50%;
-} */
-
-/* kkkkk */
 .title-text {
   width: 100%; 
   text-align: center; 
@@ -176,4 +171,46 @@ body{
 .title-text span { 
    background:#fff; 
    padding:0 10px; 
+}
+.arr{
+  margin: 20px auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  animation : down 1.5s linear infinite; 
+}
+.up{
+  margin: 20px auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  animation : down 1.5s linear infinite; 
+}
+.resize{
+  animation : resize 1.5s linear infinite; 
+}
+
+@keyframes down {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(30%);
+  }
+}
+@keyframes up {
+  0%, 100% {
+      transform: translateY(30%);
+  }
+  50% {
+      transform: translateY(0%);
+  }
+}
+@keyframes resize {
+  0%, 100% {
+      padding: 15px;
+  }
+  50% {
+      padding: 10px;
+    }
 }
