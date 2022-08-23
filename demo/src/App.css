@@ -20,19 +20,33 @@ html[dir="rtl"] #menu {
   float: right;
   
 }
+
 body{
   font-family:  GESSTwoLight-Light, serif;
   /* font-size:50px; */
 }
+
 :lang(ar) {
   font-family:  'GESSTwoLight-Light', serif;
 }
+
 #myframe {
   width: 100%;
   height: 650px;
   object-fit: cover;
   z-index: -100;
 }
+
+
+#contact-header{
+  width: 100%;
+}
+
+#contact-header img{
+  width: 100%;
+}
+
+
 #contact-div{
   background-image: url("../public/Images/Aqaba.jpg");
   background-size:cover;
@@ -45,6 +59,7 @@ body{
   position: relative;
   border-radius:20px;
 }
+
 #Contact-text hr{
   margin: 0;
 }
@@ -61,21 +76,26 @@ body{
   gap: 5%;
 
 }
+
 #Contact-text div a{
+
   width: 30%;
   color: black;
   text-decoration: none;
   text-align: center;
 }
+
 #social-accounts-contact{
   gap: 5%;
   margin-bottom: 5vh;
 }
+
 #social-accounts-contact div{
   background-color: #e1dae2;
   border-radius: 20px;
   padding: 5%;
 }
+
 #social-accounts-contact div a{
   text-decoration: none;
   color: black;
@@ -89,9 +109,11 @@ body{
   margin-top: 5%;
   margin-bottom: 15%;
 }
+
 .image-stack-text{
   margin-top:8%;
 }
+
 .image-left {
   position: relative;
   max-width:50%;
@@ -99,6 +121,7 @@ body{
   left: 0%;
   z-index: 1;
 }
+
 .image-left-middle {
   position: relative;
   max-width:75%;
@@ -106,6 +129,7 @@ body{
   left: 0%;
   z-index: 1;
 }
+
 .image-left-last {
   position: relative;
   max-width:75%;
@@ -120,6 +144,7 @@ body{
   left: 30%;
   z-index: 3;
 }
+
 .image-right-middle {
   position: absolute;
   max-width:100%;
@@ -127,6 +152,7 @@ body{
   left: 30%;
   z-index: 3;
 }
+
 .image-right-last {
   position: absolute;
   max-width:75%;
