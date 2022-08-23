@@ -33,7 +33,7 @@ function TopButton() {
         backgroundColor: '#FCC719',
         }}
         >
-        <i class="fa-solid fa-angles-up"></i>
+        <i className="fa-solid fa-angles-up"></i>
         </button>
         </>
     )
