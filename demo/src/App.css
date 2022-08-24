@@ -181,9 +181,11 @@ body{
   text-align: center;
   font-size: 30px;
   animation : down 1.5s linear infinite; 
+  z-index: 99;
 }
 .resize{
   animation : resize 1.5s linear infinite; 
+  z-index: 99;
 }
 
 @keyframes down {
