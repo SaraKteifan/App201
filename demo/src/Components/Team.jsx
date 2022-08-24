@@ -3,7 +3,7 @@ import { Row,Card,Col,Container } from 'react-bootstrap';
 
 function Team() {
   return (
-    <Container className='my-5 ml-2 ' lang='ar'>
+    <Container className='my-5 ml-2 '>
         {/* <div className='mb-3 d-flex justify-content-center'>
             <h2 className='title-text mb-4'><span>فريق العمل</span></h2>
         </div> */}

@@ -74,8 +74,8 @@
     }
     #header-video #img-2{
         left: 20%;
-
-
+    }
+  }
   @keyframes openclose {
     0% {
       top: 0.2rem;

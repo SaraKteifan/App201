@@ -25,8 +25,8 @@ function OurWork() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src='./Images/adminDashboard.png' alt='Header Image' id='img-1'></img></SwiperSlide>
-        <SwiperSlide><img src='./Images/website.png' alt='Header Image' id='img-2'></img></SwiperSlide>
+        <SwiperSlide key={1}><img src='./Images/adminDashboard.png' alt='Header Image' id='img-1'></img></SwiperSlide>
+        <SwiperSlide key={2}><img src='./Images/website.png' alt='Header Image' id='img-2'></img></SwiperSlide>
         {/* <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>

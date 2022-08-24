@@ -16,7 +16,7 @@ function WhatsappButton() {
         backgroundColor: 'green',
         }}
         >
-        <i class="fab fa-whatsapp fa-xl"></i>
+        <i className="fab fa-whatsapp fa-xl"></i>
         </button>
         </>
   )

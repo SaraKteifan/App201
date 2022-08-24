@@ -33,13 +33,13 @@ function Header() {
                         
                         المكان الأمثل لبناء موقعك الإلكتروني، تطبيقات الهاتف ومساعدتك في كل ما يتعلق بالبرمجة
                     </AnimatedText>
-                    <div className='arr'><i class="fa-solid fa-angles-down down"></i></div>
+                    <div className='arr'><i className="fa-solid fa-angles-down down"></i></div>
                 </Col>
                 <Col>
                     <div id='header-video'>
                         <video
                             src='./Videos/final.mp4'
-                            autoplay='true'
+                            autoPlay={true}
                             muted
                             loop
                         />

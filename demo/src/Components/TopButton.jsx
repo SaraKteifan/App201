@@ -31,9 +31,10 @@ function TopButton() {
         color          : '#fff',
         textAlign      : 'center',
         backgroundColor: '#FCC719',
+        zIndex         : 999,
         }}
         >
-        <i class="fa-solid fa-angles-up"></i>
+        <i className="fa-solid fa-angles-up"></i>
         </button>
         </>
     )

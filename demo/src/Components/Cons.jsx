@@ -6,10 +6,6 @@ function Cons() {
     <>
 
     <Container className='mt-5 ml-2' id='cons' lang='ar'>
-        <div className='mb-3 d-flex justify-content-center'>
-
-            <h2 className='title-text'><span>ما الذي يميزنا</span></h2>
-        </div> */}
         <Row xs={1} md={2} lg={3} align='center'>
             <Col>
                 <Card
