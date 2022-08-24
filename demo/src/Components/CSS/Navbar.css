@@ -4,7 +4,7 @@
 #navbar{
     margin-bottom: 0!important;
     padding: 0;
-    background-color: #170039;
+    background-color: #351C5C;
     margin: 0;
 }
 #navbarScroll{
@@ -21,7 +21,8 @@
 }
 #nav-contactBTN{
     /* align-self: center; */
-    background-color: #c8f9ff;
+    color: #170039;
+    background-color: white;
     border-radius: 5%;
     height: 40px;
     /* padding: 5px 10px; */
@@ -30,4 +31,7 @@
 
 .active{
     color: rgb(255, 128, 255) !important;
+}
+#locationbutton{
+    /* background-image: url('../location.png'); */
 }

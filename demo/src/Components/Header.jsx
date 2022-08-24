@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
 
-            <Row xs={1} lg={2} className='m-5 py-5 '>
+            <Row xs={1} lg={2} className='mx-5 pt-3 pb-5 my-3 '>
                 <Col className='container d-grid justify-content-center'>
                     <h1 className='d-flex justify-content-center align-items-center' style={{fontSize: '3rem'}}>App201</h1>
                     <AnimatedText
@@ -22,8 +22,8 @@ function Header() {
                             ease: 'ease-in-out',
                         }}
                         animationType="float"
-                        interval={0.3}
-                        duration={0.8}
+                        interval={0.09}
+                        duration={1}
                         tag="p"
                         className="animated-paragraph"
                         includeWhiteSpaces
