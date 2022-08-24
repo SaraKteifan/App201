@@ -15,7 +15,7 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid"
                 >
-                    <Card.Img variant="top" src='images/user.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/hamza-personal-pic.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title>م. حمزة ياسين</Card.Title>
@@ -115,7 +115,7 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid"
                 >
-                    <Card.Img variant="top" src='images/user.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/sara-personal-pic.jpg' style={{width:'50%',height: '19vh',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title>سارة قطيفان</Card.Title>
@@ -165,7 +165,7 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid"
                 >
-                    <Card.Img variant="top" src='images/user.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/anas-personal-pic.jpg' style={{width:'50%',height: '19vh',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title>أنس اللوافية</Card.Title>

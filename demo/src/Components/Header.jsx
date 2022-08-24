@@ -39,7 +39,7 @@ function Header() {
                     <div id='header-video'>
                         <video
                             src='./Videos/final.mp4'
-                            autoplay='true'
+                            autoPlay={true}
                             muted
                             loop
                         />

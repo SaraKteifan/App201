@@ -9,10 +9,12 @@
 }
 #navbarScroll{
     background-color: #fff;
+    color: #170039;
     position: fixed;
+    top: 0;
     width: 100%;
     padding: 10px;
-    z-index: 1;
+    z-index: 1000;
 }
 #nav_tabs{
     align-items: center;
@@ -25,6 +27,7 @@
     /* padding: 5px 10px; */
     color: black;
 }
-#nav-contactBTN h5{
-    color: black;
+
+.active{
+    color: rgb(255, 128, 255) !important;
 }

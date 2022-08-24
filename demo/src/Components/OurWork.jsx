@@ -25,15 +25,18 @@ function OurWork() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src='./Images/adminDashboard.png' alt='Header Image' id='img-1'></img></SwiperSlide>
-        <SwiperSlide><img src='./Images/website.png' alt='Header Image' id='img-2'></img></SwiperSlide>
-        {/* <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/beuatycare1.png' alt='Header Image' id='img-1'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/beuatycare2.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/beuatycare3.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/greenland1.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/greenland2.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/greenland3.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/carage1.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/carage2.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/carage3.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/furniture1.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/furniture2.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
+        <SwiperSlide><div style={{width: '250px', height: '500px'}}><img src='./Images/furniture3.png' alt='Header Image' id='img-2'></img></div></SwiperSlide>
       </Swiper>
     </Container>
     </>

@@ -11,39 +11,50 @@ import './CSS/Navbar.css';
 import AnimatedBg from "react-animated-bg";
 import TopButton from './TopButton';
 import WhatsappButton from './WhatsappButton';
+import { Router, useLocation } from 'react-router-dom';
 
 function NavBar() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1400);
   const [navId,setNavId]=useState('navbar');
   const [navbarLogo, setNavbarLogo]= useState('white-logo.png')
+  const [dis,setDis]=useState('none');
+
+  const location=useLocation();
+  const mainClass= location.pathname === '/' ? 'text-white active':'text-white';
+  const servicesClass= location.pathname === '/Services' ? 'text-white active':'text-white';
+  const aboutClass= location.pathname === '/About' ? 'text-white active':'text-white';
+  const contactClass= location.pathname === '/Contact' ? 'text-black active':'text-black';
+  console.log(mainClass);
+
 
     // When the user scrolls down 20px from the top of the document, change navbar
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            setDis('block');
             setNavId("navbarScroll");
             setDesktop(false);
             setNavbarLogo('App201-logo-.png');
         } else {
+            setDis('none');
             setNavId("navbar");
             setDesktop(true);
             setNavbarLogo('white-logo.png');
         }
     }
     
+    const updateMedia = () => {
+      setDesktop(window.innerWidth > 1400);
+    };
+   
     useEffect(()=>{
         window.onscroll = function() {scrollFunction()};
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
     },[navId])
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 1400);
-  };
 
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  },[]);
 
-  console.log(window.innerWidth);
+  console.log(window.innerWidth,'path',useLocation().pathname);
 
   return (
     <>
@@ -68,10 +79,10 @@ function NavBar() {
                 <Nav className="justify-content-end flex-grow-1 pe-3" lang='ar' id="nav_tabs">
 
 
-                  <Nav.Link href="/" className={isDesktop?'text-white':'text-black'}><h5>الصفحة الرئيسية</h5></Nav.Link>
-                  <Nav.Link href="/Services" className={isDesktop?'text-white':'text-black'}><h5>خدماتنا</h5></Nav.Link>
-                  <Nav.Link href="/About" className={isDesktop?'text-white':'text-black'}><h5>من نحن</h5></Nav.Link>
-                  <Nav.Link href="/Contact" className={isDesktop?'text-white mb-2':'text-black'} id='nav-contactBTN'><h5 className='mb-5'>تواصل معنا</h5></Nav.Link>
+                  <Nav.Link href="/" className={isDesktop? mainClass:'text-black'}><h5>الصفحة الرئيسية</h5></Nav.Link>
+                  <Nav.Link href="/Services" className={isDesktop? servicesClass:'text-black'}><h5>خدماتنا</h5></Nav.Link>
+                  <Nav.Link href="/About" className={isDesktop? aboutClass:'text-black'}><h5>من نحن</h5></Nav.Link>
+                  <Nav.Link href="/Contact" className={isDesktop? contactClass:'text-black'} id='nav-contactBTN'><h5 className='mb-5'>تواصل معنا</h5></Nav.Link>
 
 
                   {/* <NavDropdown
@@ -92,7 +103,7 @@ function NavBar() {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-        <TopButton />
+        <TopButton dis={dis} />
         <WhatsappButton />
     </>
   );

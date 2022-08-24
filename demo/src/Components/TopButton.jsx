@@ -1,21 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function TopButton() {
-
-    const [dis,setDis]=useState('none');
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            setDis("block");
-        } else {
-            setDis("none");
-        }
-    }
-    
-    useEffect(()=>{
-        window.onscroll = function() {scrollFunction()};
-    },[dis])
+function TopButton(props) {
 
     return (
         <>        
@@ -24,7 +9,7 @@ function TopButton() {
         className='btn rounded-circle btn-xl border-0 up'
         onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}
         style  ={{
-        display        : dis,
+        display        : props.dis,
         position       : 'fixed',
         bottom         : '40px',
         right          : '40px',
