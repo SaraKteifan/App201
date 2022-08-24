@@ -4,8 +4,8 @@ import { Row,Card,Col,Container } from 'react-bootstrap';
 function Cons() {
   return (
     <>
-
     <Container className='mt-5 ml-2' id='cons'>
+
         <Row xs={1} md={2} lg={3} align='center'>
             <Col>
                 <Card

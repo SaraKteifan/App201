@@ -52,8 +52,6 @@ function NavBar() {
         return () => window.removeEventListener("resize", updateMedia);
     },[navId])
 
-
-
   console.log(window.innerWidth,'path',useLocation().pathname);
 
   return (
@@ -61,7 +59,7 @@ function NavBar() {
         <Navbar expand='xxl' className="mb-3" id={navId}>
           <Container>
 
-          <Navbar.Brand href="#/">
+          <Navbar.Brand href="/">
                 <img src={`./Images/${navbarLogo}`} alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black' />

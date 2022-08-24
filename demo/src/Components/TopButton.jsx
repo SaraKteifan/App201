@@ -16,6 +16,7 @@ function TopButton(props) {
         color          : '#fff',
         textAlign      : 'center',
         backgroundColor: '#FCC719',
+        zIndex         : 999,
         }}
         >
         <i className="fa-solid fa-angles-up"></i>
