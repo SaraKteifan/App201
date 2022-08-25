@@ -187,6 +187,10 @@ body{
   animation : resize 1.5s linear infinite; 
   z-index: 99;
 }
+.resize1{
+  animation : resize1 1s linear infinite; 
+  z-index: 99;
+}
 
 @keyframes down {
   0%, 100% {
@@ -210,5 +214,13 @@ body{
   }
   50% {
       padding: 10px;
+    }
+}
+@keyframes resize1 {
+  0%, 100% {
+      bottom: 110px;
+  }
+  50% {
+      bottom: 115px;
     }
 }

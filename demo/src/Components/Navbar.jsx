@@ -12,6 +12,7 @@ import AnimatedBg from "react-animated-bg";
 import TopButton from './TopButton';
 import WhatsappButton from './WhatsappButton';
 import { Router, useLocation } from 'react-router-dom';
+import LocationButton from './LocationButton';
 
 function NavBar() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1400);
@@ -20,10 +21,11 @@ function NavBar() {
   const [dis,setDis]=useState('none');
 
   const location=useLocation();
-  const mainClass= location.pathname === '/' ? 'text-white active':'text-white';
-  const servicesClass= location.pathname === '/Services' ? 'text-white active':'text-white';
-  const aboutClass= location.pathname === '/About' ? 'text-white active':'text-white';
-  const contactClass= location.pathname === '/Contact' ? 'text-black active':'text-black';
+  const mainClass= isDesktop? (location.pathname === '/' ? 'text-white active':'text-white'):(location.pathname === '/' ?'text-black active':'text-black');
+  const servicesClass=  isDesktop? (location.pathname === '/Services' ? 'text-white active':'text-white'):(location.pathname === '/Services' ? 'text-black active':'text-black');
+  const aboutClass= isDesktop? (location.pathname === '/About' ? 'text-white active':'text-white'):(location.pathname === '/About' ? 'text-black active':'text-black');
+  const contactClass= isDesktop? (location.pathname === '/Contact' ? 'btn border-white text-white active':'btn border-white text-white'):(location.pathname === '/Contact' ? 'btn border-dark text-black active':'btn border-dark text-black');
+  // const default
   console.log(mainClass);
 
 
@@ -77,10 +79,10 @@ function NavBar() {
                 <Nav className="justify-content-end flex-grow-1 pe-3" lang='ar' id="nav_tabs">
 
 
-                  <Nav.Link href="/" className={isDesktop? mainClass:'text-black'}><h5>الصفحة الرئيسية</h5></Nav.Link>
-                  <Nav.Link href="/Services" className={isDesktop? servicesClass:'text-black'}><h5>خدماتنا</h5></Nav.Link>
-                  <Nav.Link href="/About" className={isDesktop? aboutClass:'text-black'}><h5>من نحن</h5></Nav.Link>
-                  <Nav.Link href="/Contact" className={isDesktop? contactClass:'text-black'} id='nav-contactBTN'><h5 className='mb-5'>تواصل معنا</h5></Nav.Link>
+                  <Nav.Link href="/" className={mainClass}><h5>الصفحة الرئيسية</h5></Nav.Link>
+                  <Nav.Link href="/Services" className={servicesClass}><h5>خدماتنا</h5></Nav.Link>
+                  <Nav.Link href="/About" className={aboutClass}><h5>من نحن</h5></Nav.Link>
+                  <Nav.Link href="/Contact"><h5 className={contactClass} style={{fontSize: '20px'}}>استشرنا لطفاً</h5></Nav.Link>
 
 
                   {/* <NavDropdown
@@ -103,6 +105,7 @@ function NavBar() {
         </Navbar>
         <TopButton dis={dis} />
         <WhatsappButton />
+        <LocationButton />
     </>
   );
 }

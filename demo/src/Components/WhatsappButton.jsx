@@ -5,15 +5,19 @@ function WhatsappButton() {
     <>        
         {/* 👇️ whats app button */}
         <button
-        className='btn rounded-circle btn-success resize'
+        title='WhatsApp'
+        className='btn rounded-circle '
         onClick={() => {window.open('https://wa.me/962790208181', '_blank');}}
         style  ={{
         position       : 'fixed',
         bottom         : '40px',
-        left          : '40px',
-        color          : '#fff',
+        left           : '5px',
+        fontSize       : '25px',
+        color          : 'black',
         textAlign      : 'center',
-        backgroundColor: 'green',
+        backgroundColor: 'white',
+        border: 'none',
+        zIndex: 100,
         }}
         >
         <i className="fab fa-whatsapp fa-xl"></i>
