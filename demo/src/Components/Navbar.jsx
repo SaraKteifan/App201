@@ -57,12 +57,12 @@ function NavBar() {
   return (
     <>
         <Navbar expand='xxl' className="mb-3" id={navId}>
-          <Container>
+          {/* <Container> */}
 
           <Navbar.Brand href="/">
                 <img src={`./Images/${navbarLogo}`} alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black' />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black mx-3' />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-xxl`}
               aria-labelledby={`offcanvasNavbarLabel-expand-xxl`}
@@ -99,7 +99,7 @@ function NavBar() {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-          </Container>
+          {/* </Container> */}
         </Navbar>
         <TopButton dis={dis} />
         <WhatsappButton />
