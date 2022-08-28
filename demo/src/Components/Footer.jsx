@@ -32,7 +32,7 @@ function Footer() {
                         {/* Google */}
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
-                            href="#!"
+                            href="mailto:app201.aqaba2022@gmail.com"
                             target='_blank'
                             role="button"
                             title='البريد الإلكتروني'
@@ -42,7 +42,7 @@ function Footer() {
                         {/* Instagram */}
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
-                            href="https://www.instagram.com/accounts/login/?next=/app201_for_programing/"
+                            href="https://www.instagram.com/app201_for_programing/"
                             target='_blank'
                             role="button"
                             title='انستجرام'
@@ -52,7 +52,7 @@ function Footer() {
                         {/* Linkedin */}
                         <a
                             className="btn btn-outline-light btn-floating m-1 rounded-circle"
-                            href="#!"
+                            href="https://www.linkedin.com/company/app201/"
                             target='_blank'
                             role="button"
                             title='لينكدن'

@@ -14,7 +14,7 @@ function Cons() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid  border-0"
                 >
-                    <Card.Img variant="top" src='images/Pen.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/Pen_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
 
@@ -34,7 +34,7 @@ function Cons() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid  border-0"
                 >
-                    <Card.Img variant="top" src='images/price.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/price_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title lang='ar'>أسعار منافسة</Card.Title>
@@ -50,7 +50,7 @@ function Cons() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid  border-0"
                 >
-                    <Card.Img variant="top" src='images/services1.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/services1_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title lang='ar'>خدمة متواصلة</Card.Title>
@@ -68,7 +68,7 @@ function Cons() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid border-0"
                 >
-                    <Card.Img variant="top" src='images/performance.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/performance_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title lang='ar'>أداء عالي</Card.Title>
@@ -86,7 +86,7 @@ function Cons() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid  border-0"
                 >
-                    <Card.Img variant="top" src='images/flexible.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/flexible_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title lang='ar'>موقع الكتروني مرن</Card.Title>
@@ -104,7 +104,7 @@ function Cons() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid border-0"
                 >
-                    <Card.Img variant="top" src='images/phone.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img variant="top" src='images/phone_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title lang='ar'>تطبيقات الهاتف</Card.Title>

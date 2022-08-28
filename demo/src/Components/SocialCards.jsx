@@ -15,7 +15,7 @@ function SocialCards() {
           <div className="face face2">
             <div className="content">
               <h3>
-                <a className='soA' href="https://www.linkedin.com/in/adamdipinto/" target="_blank">App201</a>
+                <a className='soA' href="https://www.instagram.com/app201_for_programing/" target="_blank">App201</a>
               </h3>
               <p lang='ar'>صفحتنا على انستجرام حتى تشوف اخر تصاميمنا واعمالنا</p>
             </div>
@@ -32,7 +32,7 @@ function SocialCards() {
           <div className="face face2">
             <div className="content">
               <h3>
-                <a className='soA' href="https://twitter.com/AdamDipinto" target="_blank">App201</a>
+                <a className='soA' href="https://www.facebook.com/com.App201" target="_blank">App201</a>
               </h3>
               <p lang='ar'>شاركنا تجربتك وارائك على فيسبوك </p>
             </div>
@@ -49,7 +49,7 @@ function SocialCards() {
           <div className="face face2">
             <div className="content">
               <h3>
-                <a className='soA' href="https://github.com/atom888" target="_blank">App201</a>
+                <a className='soA' href="https://www.linkedin.com/company/app201/" target="_blank">App201</a>
               </h3>
               <p lang='ar'>صفحتنا على لينكد ان اذا كنت حابب تنضم لعيلتنا وتستكشف الوضائف المطروحة</p>
             </div>
