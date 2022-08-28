@@ -10,8 +10,8 @@ function Contact() {
     return (
         <>
         
-            <div id='contact-div' className='d-grid justify-content-center align-items-center'>
-                <div id='Contact-text'>
+            <div id='contact-div' className='d-grid justify-content-center align-items-center '>
+                <div id='Contact-text' className='overlay'>
 
                 <Row className='d-flex'>
                    <h4>للمساعدة والاستفسار تواصل معنا عن طريق أي من الوسائل التالية:</h4>
