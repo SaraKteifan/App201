@@ -50,6 +50,7 @@ body{
 #contact-div{
   background-image: url("../public/Images/Aqaba.jpg");
   background-size:cover;
+  background-repeat: no-repeat;
   height: 100vh;
   
 }

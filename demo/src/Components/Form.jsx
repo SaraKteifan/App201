@@ -1,6 +1,7 @@
-import React from 'react'
-import { useState } from 'react'
-import emailjs from 'emailjs-com'
+import React from 'react';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { Container } from 'react-bootstrap';
 
 function Form() {
     const [name,setName]= useState('')
@@ -21,42 +22,44 @@ function Form() {
 
     return (
         <>
-            <div className='container'>
-                <form onSubmit={sendEmail}>
+            <Container className='pt-2 '>
+            <form onSubmit={sendEmail}>
                     {/* Name input */}
-                    <div className="form-outline mb-4">
+                    <div className="form-control mb-4 border-0" style={{backgroundColor:' rgba(255,255,255, 0.0)'}}>
                         <label className="form-label" htmlFor="form4Example1">
-                                الاسم*
+                         اسم المرسل
                         </label>
-                        <input name='name' type="text" id="form4Example1" className="form-control" onChange={(e)=>setName(e.target.value)}/>
+                        <input style={{width:'90%'}} name='name' type="text" id="form4Example1" className="form-control" onChange={(e)=>setName(e.target.value)}/>
                     </div>
                     {/* Email input */}
-                    <div className="form-outline mb-4">
+                    <div className="form-control mb-4 border-0" style={{backgroundColor:' rgba(255,255,255, 0.0)'}}>
                         <label className="form-label" htmlFor="form4Example2">
-                            البريد الإلكتروني*
+                        البريد الإلكتروني
                         </label>
-                        <input name='email' type="email" id="form4Example2" className="form-control" onChange={(e)=>setEmail(e.target.value)}/>
+                        <input style={{width:'90%'}} name='email' type="email" id="form4Example2" className="form-control" onChange={(e)=>setEmail(e.target.value)}/>
                     </div>
                     {/* Message input */}
-                    <div className="form-outline mb-4">
+                    <div className="form-control mb-4 border-0" style={{backgroundColor:' rgba(255,255,255, 0.0)'}}>
                         <label className="form-label" htmlFor="form4Example3">
-                            الرسالة*
+                        رسالتك
                         </label>
                         <textarea
                             name='message'
-                            className="form-control"
+                            className="form-control row"
                             id="form4Example3"
+                            style={{width:'90%',marginRight:'0.2vw'}}
                             rows={4}
+                            cols={1}
                             defaultValue={""}
                             onChange={(e)=>setMsg(e.target.value)}
                         />
                     </div>
                     {/* Submit button */}
-                    <button type="submit" className="btn btn-primary btn-block mb-4">
+                    <button style={{position:'relative',right:'12vw'}} type="submit" className="btn btn-success btn-block mb-4">
                         إرسال
                     </button>
                 </form>
-            </div>
+            </Container>
         </>
     )
 }

@@ -7,6 +7,7 @@ function WhatsappButton() {
     <>        
         {/* 👇️ whats app button */}
         <button
+
         onMouseOver={()=>setWappDis('inline-block')}
         onMouseOut={()=>setWappDis('none')}
         className='btn rounded-circle '
@@ -15,6 +16,7 @@ function WhatsappButton() {
         >
         <span id='wapp-span' style={{display: wappDis}}>واتساب</span>
         <i className="fab fa-whatsapp fa-xl"></i>
+       
         </button>
         </>
   )
