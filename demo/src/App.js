@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, BrowserRouter, Route, Link } from "react-router-dom";
+import { Routes, BrowserRouter, Route, Link, HashRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-icons'
 import NavBar from './Components/Navbar';
@@ -14,7 +14,7 @@ import Contact from './Pages/Contact';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter history={HashRouter}>
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home />}/>
