@@ -23,8 +23,7 @@ function Team() {
                         <Card.Subtitle lang='ar'>مدير عام</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
-                            {/* Facebook */}
-                            <a
+                            {/* <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
@@ -33,7 +32,6 @@ function Team() {
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
-                            {/* Instagram */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -43,7 +41,6 @@ function Team() {
                             >
                                 <i className="fab fa-instagram" />
                             </a>
-                            {/* Linkedin */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -52,7 +49,7 @@ function Team() {
                                 title='لينكدن'
                             >
                                 <i className="fab fa-linkedin-in" />
-                            </a>
+                            </a> */}
                         </section>
                         {/* Section: Social media */}
                         </div>
@@ -73,8 +70,7 @@ function Team() {
                         <Card.Subtitle lang='ar'>مدير عام</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
-                            {/* Facebook */}
-                            <a
+                            {/* <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
@@ -83,7 +79,6 @@ function Team() {
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
-                            {/* Instagram */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -93,7 +88,6 @@ function Team() {
                             >
                                 <i className="fab fa-instagram" />
                             </a>
-                            {/* Linkedin */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -102,7 +96,7 @@ function Team() {
                                 title='لينكدن'
                             >
                                 <i className="fab fa-linkedin-in" />
-                            </a>
+                            </a> */}
                         </section>
                         {/* Section: Social media */}
                         </div>
@@ -123,8 +117,7 @@ function Team() {
                         <Card.Subtitle lang='ar'>مبرمجة</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
-                            {/* Facebook */}
-                            <a
+                            {/* <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
@@ -133,7 +126,6 @@ function Team() {
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
-                            {/* Instagram */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -143,7 +135,6 @@ function Team() {
                             >
                                 <i className="fab fa-instagram" />
                             </a>
-                            {/* Linkedin */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -152,7 +143,7 @@ function Team() {
                                 title='لينكدن'
                             >
                                 <i className="fab fa-linkedin-in" />
-                            </a>
+                            </a> */}
                         </section>
                         {/* Section: Social media */}
                         </div>
@@ -173,8 +164,7 @@ function Team() {
                         <Card.Subtitle lang='ar'>مبرمج</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
-                            {/* Facebook */}
-                            <a
+                            {/* <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
@@ -183,7 +173,6 @@ function Team() {
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
-                            {/* Instagram */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -193,7 +182,6 @@ function Team() {
                             >
                                 <i className="fab fa-instagram" />
                             </a>
-                            {/* Linkedin */}
                             <a
                                 className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
@@ -202,7 +190,7 @@ function Team() {
                                 title='لينكدن'
                             >
                                 <i className="fab fa-linkedin-in" />
-                            </a>
+                            </a> */}
                         </section>
                         {/* Section: Social media */}
                         </div>
