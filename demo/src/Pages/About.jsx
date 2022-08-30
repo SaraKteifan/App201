@@ -7,17 +7,17 @@ import Gallery from "react-photo-gallery";
 function Images(){
   const photos = [
     {
-        src: "/images/anas-personal-pic.jpg",
+        src: "./Images/anas-personal-pic.jpg",
         width: 800,
         height: 600
     },
     {
-        src: "/images/sara-personal-pic.jpg",
+        src: "./Images/sara-personal-pic.jpg",
         width: 800,
         height: 600
     },
     {
-        src: "/Images/hamza-personal-pic2.png",
+        src: "./Images/hamza-personal-pic2.png",
         width: 800,
         height: 600
     },
@@ -27,27 +27,27 @@ function Images(){
       height: 900
     },
     {
-        src: "/images/hamza-personal-pic.png",
+        src: "./Images/hamza-personal-pic.png",
         width: 1600,
         height: 1900
     },
     {
-        src: "/images/help6.png",
+        src: "./Images/help6.png",
         width: 800,
         height: 600
     },
     {
-        src: "/images/web5.png",
+        src: "./Images/web5.png",
         width: 800,
         height: 600
     },
     {
-        src: "/images/web4.png",
+        src: "./Images/web4.png",
         width: 1600,
         height: 900
     },
     {
-        src: "/images/help5.png",
+        src: "./Images/help5.png",
         width: 1600,
         height: 900
     },
