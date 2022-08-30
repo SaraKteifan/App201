@@ -5,12 +5,27 @@ import AnimatedText from 'react-animated-text-content';
 
 
 function Header() {
+    window.addEventListener("click", () => {
+        const $phone = document.querySelector(".phone")
+        $phone.classList.toggle('-loooooong')
+      })
+      
     return (
         <>
 
-            <Row xs={1} lg={2} className='mx-5 pt-3 pb-5 my-3 '>
-                <Col className='container d-grid justify-content-center'>
-                    <h1 className='d-flex justify-content-center align-items-center' style={{fontSize: '3rem'}}>App201</h1>
+            <Row xs={1} lg={2} className='mx-5 pt-3 pb-5 my-5 '>
+                <Col id='phone' className='container d-grid justify-content-center'>
+                    {/* The phone code */}
+                    <div class="phone mb-4">
+                        <div class="phone_mic"></div>
+                        <div class="phone_screen d-flex align-items-center">
+                        <img className='phone-img' style={{width:'100%'}} src="./Images/wobg-logo.png" alt="logo" />
+                        </div>
+                        <div class="phone_button"></div>
+                    </div>
+                    {/* End of The phone code */}
+
+                    {/* <h1 className='d-flex justify-content-center align-items-center' style={{fontSize: '3rem'}}>App201</h1> */}
                     <AnimatedText
                         lang='ar'
                         style={{fontSize: '30px'}}
@@ -30,7 +45,6 @@ function Header() {
                         threshold={0.1}
                         rootMargin="20%"
                     >
-                        
                         المكان الأمثل لبناء موقعك الإلكتروني، تطبيقات الهاتف ومساعدتك في كل ما يتعلق بالبرمجة
                     </AnimatedText>
                     <div className='arr'><i className="fa-solid fa-angles-down down"></i></div>
@@ -43,6 +57,7 @@ function Header() {
                             muted
                             loop
                         />
+                        {/* <img style={{width:'110%'}} src="./Videos/nobackground.gif" alt="" /> */}
                     </div>
                 </Col>
             </Row>

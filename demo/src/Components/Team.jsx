@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row,Card,Col,Container } from 'react-bootstrap';
+import './CSS/Team.css'
 
 function Team() {
   return (
@@ -10,21 +11,21 @@ function Team() {
         <Row xs={1} md={2} lg={4} align='center' >
             <Col>
                 <Card
-                bg='white'
+                bg='transparent'
                 text='dark'
                 style={{ width: '18rem' }}
-                className="mb-2 d-grid"
+                className="mb-2 d-grid cardT"
                 >
-                    <Card.Img variant="top" src='images/hamza-personal-pic_edit.png' style={{width:'70%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/hamza-personal-pic_new.png' style={{width:'70%',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
-                        <Card.Title>م. حمزة ياسين</Card.Title>
-                        <Card.Subtitle>مدير عام</Card.Subtitle>
+                        <Card.Title lang='ar'>م. حمزة ياسين</Card.Title>
+                        <Card.Subtitle lang='ar'>مدير عام</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* Facebook */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
                                 role="button"
@@ -34,7 +35,7 @@ function Team() {
                             </a>
                             {/* Instagram */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -44,7 +45,7 @@ function Team() {
                             </a>
                             {/* Linkedin */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -60,21 +61,21 @@ function Team() {
             </Col>
             <Col>
                 <Card
-                bg='white'
+                bg='transparent'
                 text='dark'
                 style={{ width: '18rem' }}
-                className="mb-2 d-grid"
+                className="mb-2 d-grid cardT"
                 >
-                    <Card.Img variant="top" src='images/user.png' style={{width:'70%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/Emad-personal-pic-new.png' style={{width:'67%',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
-                        <Card.Title>م. عماد ياسين</Card.Title>
-                        <Card.Subtitle>مدير عام</Card.Subtitle>
+                        <Card.Title lang='ar'>م. عماد ياسين</Card.Title>
+                        <Card.Subtitle lang='ar'>مدير عام</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* Facebook */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
                                 role="button"
@@ -84,7 +85,7 @@ function Team() {
                             </a>
                             {/* Instagram */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -94,7 +95,7 @@ function Team() {
                             </a>
                             {/* Linkedin */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -110,21 +111,21 @@ function Team() {
             </Col>
             <Col>
                 <Card
-                bg='white'
+                bg='transparent'
                 text='dark'
                 style={{ width: '18rem' }}
-                className="mb-2 d-grid"
+                className="mb-2 d-grid cardT"
                 >
-                    <Card.Img variant="top" src='images/sara-personal-pic_edit.jpg' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/sara-personal-pic_new.png' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
-                        <Card.Title>سارة قطيفان</Card.Title>
-                        <Card.Subtitle>مبرمجة</Card.Subtitle>
+                        <Card.Title lang='ar'>سارة قطيفان</Card.Title>
+                        <Card.Subtitle lang='ar'>مبرمجة</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* Facebook */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
                                 role="button"
@@ -134,7 +135,7 @@ function Team() {
                             </a>
                             {/* Instagram */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -144,7 +145,7 @@ function Team() {
                             </a>
                             {/* Linkedin */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -160,21 +161,21 @@ function Team() {
             </Col>
             <Col>
                 <Card
-                bg='white'
+                bg='transparent'
                 text='dark'
                 style={{ width: '18rem' }}
-                className="mb-2 d-grid"
+                className="mb-2 d-grid border-3 cardT"
                 >
-                    <Card.Img variant="top" src='images/anas-personal-pic_edit.jpg' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/anas-personal-pic_new.png' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
-                        <Card.Title>أنس اللوافية</Card.Title>
-                        <Card.Subtitle>مبرمج</Card.Subtitle>
+                        <Card.Title lang='ar'>أنس اللوافية</Card.Title>
+                        <Card.Subtitle lang='ar'>مبرمج</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* Facebook */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="https://www.facebook.com/com.App201"
                                 target='_blank'
                                 role="button"
@@ -184,7 +185,7 @@ function Team() {
                             </a>
                             {/* Instagram */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
@@ -194,7 +195,7 @@ function Team() {
                             </a>
                             {/* Linkedin */}
                             <a
-                                className="btn btn-outline-dark btn-floating m-1 rounded-square"
+                                className="btn btn-outline-success btn-floating m-1 rounded-square"
                                 href="#!"
                                 target='_blank'
                                 role="button"
