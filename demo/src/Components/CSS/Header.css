@@ -40,7 +40,7 @@
     justify-content: center;
 }
 #header-video video{
-    width: 75%;
+    width: 120%;
     /* position: relative;
     left: -10%;
     top: 10%; */
@@ -143,3 +143,83 @@
 
     }
   }
+
+  #phone{
+    justify-items: center !important;
+  }
+  .phone:hover{
+    transform: rotate(90deg);
+  }
+  .phone:hover .phone-img{
+    transform: rotate(-90deg);
+  }
+  /* Start of phone style */
+  .site {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    background-color: #89d1bf;
+  }
+  .site::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .phone {
+    --black5: #ffffff;
+    --black4: #fffafa;
+  
+    z-index: 1;
+    width: 9rem;
+    height: 18rem;
+    padding: 0 0.5rem;
+    border: 0.25rem solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0.5rem 0.5rem rgba(108, 88, 88, 0.3);
+    transition: all 0.3s;
+  }
+  .phone.-loooooong{
+    height: 100%;
+  }
+  
+  .phone_mic {
+    height: 0.25rem;
+    width: 4rem;
+    margin: 1rem auto;
+    border-radius: 999rem;
+    background-color: black;
+  }
+  .phone_screen {
+    position: relative;
+    flex: 1 0 auto;
+    background-color: white;
+  }
+  .phone_screen::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: white; */
+    clip-path: polygon(70% 0, 100% 0%, 100% 100%, 30% 100%);
+  }
+  .phone_button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+  /* End of phone style  */

@@ -2,7 +2,6 @@ import React from 'react'
 import Form from '../Components/Form'
 import { Container } from 'react-bootstrap'
 import Map from '../Components/Map'
-
 import SocialCards from '../Components/SocialCards'
 import {Row, Col} from 'react-bootstrap'
 

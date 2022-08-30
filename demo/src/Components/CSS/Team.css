@@ -1,0 +1,9 @@
+.cardT:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -o-linear-gradient(#c1b5b5, #c1b8b8);
+    background: linear-gradient(#ffffff, #dbdbdb);
+    color: #ffffff;
+  }
+  .imgT:hover {
+    transform: scale(1.2);
+  }

@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import './CSS/Footer.css'
 
-function Footer() {
+function Footer(style) {
+
+
     return (
-        <div className='bottom-plane'>
+        <div className={{style}}>
             <footer className="text-center text-white">
                 {/* Grid container */}
                 <div className="container p-4 pb-0">
