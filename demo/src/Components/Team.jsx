@@ -16,7 +16,9 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid cardT"
                 >
+
                     <Card.Img className='mt-2 imgT' variant="top" src='./Images/hamza-personal-pic_new.png' style={{width:'70%',objectFit:'cover',justifySelf:'center'}}/>
+
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>م. حمزة ياسين</Card.Title>
@@ -63,7 +65,9 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid cardT"
                 >
+
                     <Card.Img className='mt-2 imgT' variant="top" src='./Images/Emad-personal-pic-new.png' style={{width:'67%',objectFit:'cover',justifySelf:'center'}}/>
+
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>م. عماد ياسين</Card.Title>
@@ -110,7 +114,9 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid cardT"
                 >
+
                     <Card.Img className='mt-2 imgT' variant="top" src='./Images/sara-personal-pic_new.png' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
+
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>سارة قطيفان</Card.Title>
@@ -157,7 +163,9 @@ function Team() {
                 style={{ width: '18rem' }}
                 className="mb-2 d-grid border-3 cardT"
                 >
+
                     <Card.Img className='mt-2 imgT' variant="top" src='./Images/anas-personal-pic_new.png' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
+
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>أنس اللوافية</Card.Title>

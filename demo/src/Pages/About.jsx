@@ -7,11 +7,14 @@ import Gallery from "react-photo-gallery";
 function Images(){
   const photos = [
     {
+
         src: "./Images/anas-personal-pic_edit.jpg",
+
         width: 800,
         height: 800
     },
     {
+
         src: "./Images/sara-personal-pic_edit.jpg",
         width: 1000,
         height: 800
@@ -19,6 +22,7 @@ function Images(){
     {
         src: "./Images/hamza-personal-pic2_edit.png",
         width: 1000,
+
         height: 600
     },
     {
@@ -27,12 +31,16 @@ function Images(){
       height: 900
     },
     {
+
         src: "./Images/hamza-personal-pic_edit.png",
+
         width: 1600,
         height: 1900
     },
     {
-        src: "./images/help6.png",
+
+        src: "./Images/help6.png",
+
         width: 800,
         height: 600
     },
