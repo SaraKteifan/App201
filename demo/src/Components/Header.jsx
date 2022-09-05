@@ -9,14 +9,22 @@ function Header() {
         const $phone = document.querySelector(".phone")
         $phone.classList.toggle('-loooooong')
       })
-      
+
+    const rotate=()=>{
+        if (document.getElementById('phonex').style.transform === 'rotate(90deg)') {
+            document.getElementById('phonex').style.transform='rotate(0deg)';
+        }
+        else{
+            document.getElementById('phonex').style.transform='rotate(90deg)';
+        }
+    }
     return (
         <>
 
-            <Row xs={1} lg={2} className='mx-5 pt-3 pb-5 my-5 '>
+            <Row xs={1} lg={2} className='mx-5 py-5 my-5'>
                 <Col id='phone' className='container d-grid justify-content-center'>
                     {/* The phone code */}
-                    <div class="phone mb-4">
+                    <div class="phone mb-4" id='phonex' onClick={()=>{rotate()}}>
                         <div class="phone_mic"></div>
                         <div class="phone_screen d-flex align-items-center">
                         <img className='phone-img' style={{width:'100%'}} src="./Images/wobg-logo.png" alt="logo" />

@@ -67,7 +67,9 @@ function NavBar() {
           <Navbar.Brand href="/">
                 <img src={`./Images/${navbarLogo}`} alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
+
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='mx-3' id='nav-toggle'/>
+
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-xxl`}
               aria-labelledby={`offcanvasNavbarLabel-expand-xxl`}

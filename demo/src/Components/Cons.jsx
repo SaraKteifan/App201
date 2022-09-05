@@ -16,7 +16,7 @@ function Cons() {
                 className="mb-2 d-grid border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/Pen_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/pen_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
 
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>

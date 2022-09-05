@@ -147,12 +147,12 @@
   #phone{
     justify-items: center !important;
   }
-  .phone:hover{
+  /* .phone:hover{
     transform: rotate(90deg);
   }
   .phone:hover .phone-img{
     transform: rotate(-90deg);
-  }
+  } */
   /* Start of phone style */
   .site {
     position: relative;
@@ -188,9 +188,9 @@
     box-shadow: 0.5rem 0.5rem rgba(108, 88, 88, 0.3);
     transition: all 0.3s;
   }
-  .phone.-loooooong{
+  /* .phone.-loooooong{
     height: 100%;
-  }
+  } */
   
   .phone_mic {
     height: 0.25rem;
