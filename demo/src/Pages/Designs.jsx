@@ -34,15 +34,19 @@ const slides = [
             </Col>
         </Row>
     </>,
+    key:1
   }, {
     color: '#0074D9',
     content: 2,
+    key:2
   }, {
     color: '#00c4ff',
     content: 3,
+    key:3
   }, {
     color: '#d52685',
     content: 4,
+    key:4
   },
 ];
 
@@ -66,18 +70,20 @@ export default function Designs() {
 
   return (
     <>
+    <div>
       <FullPage controls controlsProps={controlsProps}>
         {visibleSlides.map(({ color, content }) => (
           <Slide
             key={content}
             style={{
-              background: color, display: 'grid', alignItems: 'center', justifyContent: 'center',
+              background: color, display: 'grid', alignItems: 'center', justifyContent: 'center',position:'relative'
             }}
           >
             {content}
           </Slide>
         ))}
       </FullPage>
+      </div>
     </>
   );
 };

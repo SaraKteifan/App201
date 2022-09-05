@@ -22,7 +22,6 @@ function Team() {
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>م. حمزة ياسين</Card.Title>
-                        <Card.Subtitle lang='ar'>مدير عام</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* <a
@@ -71,7 +70,6 @@ function Team() {
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>م. عماد ياسين</Card.Title>
-                        <Card.Subtitle lang='ar'>مدير عام</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* <a
@@ -120,7 +118,6 @@ function Team() {
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>سارة قطيفان</Card.Title>
-                        <Card.Subtitle lang='ar'>مبرمجة</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* <a
@@ -169,7 +166,6 @@ function Team() {
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
                         <Card.Title lang='ar'>أنس اللوافية</Card.Title>
-                        <Card.Subtitle lang='ar'>مبرمج</Card.Subtitle>
                         {/* Section: Social media */}
                         <section className="mb-4">
                             {/* <a
