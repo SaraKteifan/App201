@@ -35,3 +35,13 @@
     color: rgb(255, 128, 255) !important;
 }
 
+.navbar-dark #nav-toggle{
+    border: 2px solid rgba(255,255,255,0.5);
+}
+.navbar-white #nav-toggle{
+    border: 2px solid rgba(0,0,0,0.5);
+}
+#nav-toggle:focus,#nav-toggle:active {
+    outline: none !important;
+    box-shadow: none;
+ }

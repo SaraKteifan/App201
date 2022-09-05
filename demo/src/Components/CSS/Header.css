@@ -223,3 +223,8 @@
     margin: 1rem auto;
   }
   /* End of phone style  */
+  @media only screen and (max-width: 768px) {
+    #header-video video{
+      display: none;
+  }
+}
