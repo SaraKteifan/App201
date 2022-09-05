@@ -13,9 +13,11 @@ function Header() {
     const rotate=()=>{
         if (document.getElementById('phonex').style.transform === 'rotate(90deg)') {
             document.getElementById('phonex').style.transform='rotate(0deg)';
+            document.getElementById('phonelogo').style.transform='rotate(0deg)';
         }
         else{
             document.getElementById('phonex').style.transform='rotate(90deg)';
+            document.getElementById('phonelogo').style.transform='rotate(-90deg)';
         }
     }
     return (
@@ -27,7 +29,7 @@ function Header() {
                     <div class="phone mb-4" id='phonex' onClick={()=>{rotate()}}>
                         <div class="phone_mic"></div>
                         <div class="phone_screen d-flex align-items-center">
-                        <img className='phone-img' style={{width:'100%'}} src="./Images/wobg-logo.png" alt="logo" />
+                        <img className='phone-img' id='phonelogo' style={{width:'100%'}} src="./Images/wobg-logo.png" alt="logo" />
                         </div>
                         <div class="phone_button"></div>
                     </div>
