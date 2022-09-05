@@ -19,27 +19,30 @@ function NavBar() {
   const [navId,setNavId]=useState('navbar');
   const [navbarLogo, setNavbarLogo]= useState('white-logo.png')
   const [dis,setDis]=useState('none');
+  const [scrolling, setScrolling] = useState(false);
 
   const location=useLocation();
-  const mainClass= isDesktop? (location.pathname === '/' ? 'text-white active':'text-white'):(location.pathname === '/' ?'text-black active':'text-black');
-  const servicesClass=  isDesktop? (location.pathname === '/Services' ? 'text-white active':'text-white'):(location.pathname === '/Services' ? 'text-black active':'text-black');
-  const aboutClass= isDesktop? (location.pathname === '/About' ? 'text-white active':'text-white'):(location.pathname === '/About' ? 'text-black active':'text-black');
-  const contactClass= isDesktop? (location.pathname === '/Contact' ? 'btn border-white text-white active':'btn border-white text-white'):(location.pathname === '/Contact' ? 'btn border-dark text-black active':'btn border-dark text-black');
+  const mainClass= isDesktop && !scrolling? (location.pathname === '/' ? 'text-white active':'text-white'):(location.pathname === '/' ?'text-black active':'text-black');
+  const servicesClass=  isDesktop && !scrolling? (location.pathname === '/Services' ? 'text-white active':'text-white'):(location.pathname === '/Services' ? 'text-black active':'text-black');
+  const aboutClass= isDesktop && !scrolling? (location.pathname === '/About' ? 'text-white active':'text-white'):(location.pathname === '/About' ? 'text-black active':'text-black');
+  const contactClass= isDesktop && !scrolling? (location.pathname === '/Contact' ? 'btn border-white text-white active':'btn border-white text-white'):(location.pathname === '/Contact' ? 'btn border-dark text-black active':'btn border-dark text-black');
+  const navbarClass= scrolling ? "mb-3 navbar-white":"mb-3 navbar-dark";
+  const navbarid= scrolling ? "mb-3 navbar-white":"mb-3 navbar-dark";
   // const default
   console.log(mainClass);
 
 
     // When the user scrolls down 20px from the top of the document, change navbar
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
             setDis('block');
             setNavId("navbarScroll");
-            setDesktop(false);
+            setScrolling(true);
             setNavbarLogo('App201-logo-.png');
         } else {
             setDis('none');
             setNavId("navbar");
-            setDesktop(true);
+            setScrolling(false);
             setNavbarLogo('white-logo.png');
         }
     }
@@ -58,13 +61,13 @@ function NavBar() {
 
   return (
     <>
-        <Navbar expand='xxl' className="mb-3" id={navId}>
+        <Navbar expand='xxl' className={navbarClass} id={navId}>
           {/* <Container> */}
 
           <Navbar.Brand href="/">
                 <img src={`./Images/${navbarLogo}`} alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='bg-white text-black mx-3' />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} className='mx-3' id='nav-toggle'/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-xxl`}
               aria-labelledby={`offcanvasNavbarLabel-expand-xxl`}
