@@ -65,7 +65,7 @@ function Team() {
                 className="mb-2 d-grid cardT"
                 >
 
-                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/Emad-personal-pic-new.png' style={{width:'67%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/Emad-personal-pic-new.png' style={{width:'47%',objectFit:'cover',justifySelf:'center'}}/>
 
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>

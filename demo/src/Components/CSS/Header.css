@@ -2,6 +2,9 @@
     font-family: 'GESSTwoLight-Light';
     src: url("./GESSTwoLight-Light.ttf") format("truetype");
 }
+.headerfull{
+  /* background-color: #a5e6ba !important; */
+}
 #hero-div{
     width: 100%;
     /* background-color: #170039; */

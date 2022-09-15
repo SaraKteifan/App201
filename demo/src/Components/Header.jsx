@@ -23,7 +23,7 @@ function Header() {
     return (
         <>
 
-            <Row xs={1} lg={2} className='mx-5 py-5 my-5'>
+            <Row xs={1} lg={2} className='headerfull mx-5 py-5 my-5'>
                 <Col id='phone' className='container d-grid justify-content-center'>
                     {/* The phone code */}
                     <div class="phone mb-4" id='phonex' onClick={()=>{rotate()}}>
