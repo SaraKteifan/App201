@@ -1,0 +1,17 @@
+.big-table{
+    display:unset;
+}
+.small-table{
+    display: none;
+}
+.tt{
+    font-family: 'Times New Roman', Times, serif;
+}
+@media only screen and (max-width: 425px) {
+    .big-table{
+        display:none;
+    }
+    .small-table{
+        display: unset;
+    }
+}

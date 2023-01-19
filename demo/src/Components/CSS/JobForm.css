@@ -1,0 +1,31 @@
+.form-control.is-valid,.form-control.is-invalid,.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+     background-position: left calc(.375em + .1875rem) top calc(.375em + .1875rem);
+}
+
+.form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"],.form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"]{
+    background-position: right 1.75rem,top 0.15rem left 0.25rem;
+}
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label{
+    opacity: .65;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+legend p{
+    font-size:smaller;
+}
+fieldset{
+     width: 96%;
+    margin-right: 13px;
+}
+
+@media screen and (max-width: 425px) {
+    fieldset.border{
+        width: 93% !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    fieldset{
+        width: 91% !important;
+    }
+}

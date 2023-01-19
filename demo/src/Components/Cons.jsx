@@ -16,7 +16,7 @@ function Cons() {
                 className="mb-2 d-grid border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/pen_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/pen_edit.webp' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
 
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
@@ -38,7 +38,7 @@ function Cons() {
                 className="mb-2 d-grid  border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/price_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/price_edit.webp' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
 
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
@@ -56,7 +56,7 @@ function Cons() {
                 className="mb-2 d-grid  border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/services1_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/services1_edit.webp' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
 
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
@@ -76,7 +76,7 @@ function Cons() {
                 className="mb-2 d-grid border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/performance_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center',backgroundColor:'transparent'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/performance_edit.webp' style={{width:'50%',objectFit:'cover',justifySelf:'center',backgroundColor:'transparent'}}/>
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
                     <Card.Title lang='ar'><h3>أداء عالي</h3></Card.Title>
@@ -95,7 +95,7 @@ function Cons() {
                 className="mb-2 d-grid  border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/flexible_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/flexible_edit.webp' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
 
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>
@@ -115,7 +115,7 @@ function Cons() {
                 className="mb-2 d-grid border-0"
                 >
 
-                    <Card.Img className='imgC' variant="top" src='./Images/phone_edit.png' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='imgC' variant="top" src='./Images/phone_edit.webp' style={{width:'50%',objectFit:'cover',justifySelf:'center'}}/>
 
                 <Card.Body className='justify-content-center'>
                     <div style={{ display:'grid', justifyItems:'center' }}>

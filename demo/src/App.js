@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, BrowserRouter, Route, Link, HashRouter } from "react-router-dom";
+import { Routes, BrowserRouter, Route, HashRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-icons'
 import NavBar from './Components/Navbar';
@@ -10,6 +10,8 @@ import Services from './Pages/Services'
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Designs from './Pages/Designs';
+import JobForm from './Components/JobForm';
+import Applicants from './Components/Applicants';
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
           <Route path="/Services" element={<Services />}/>
           <Route path="/About" element={<About/>}/>
           <Route path="/Contact" element={<Contact />}/>
-          <Route path="/designs" element={<Designs/>}/>
+          <Route path="/Designs" element={<Designs/>}/>
+          <Route path="/job" element={<JobForm/>}/>
+          <Route path="/appppo" element={<Applicants/>}/>
         </Routes>
       </BrowserRouter>
       <Footer />
