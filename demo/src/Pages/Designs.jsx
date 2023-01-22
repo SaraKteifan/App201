@@ -1,89 +1,65 @@
-import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Col, Row } from 'react-bootstrap'
-// import '../Components/CSS/Designs.css'
-import { BsFillArrowDownCircleFill } from 'react-icons/bs'
-import FullPage from '../Components/FullPage';
-import Slide from '../Components/Slide';
-import '../Components/CSS/Designs.css';
+import React,{ useState } from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
-const controlsProps = {
-  style: {
-    left: '50%',
-    bottom: '20%',
-    position: 'fixed',
-    transform: 'translateX(-50%)',
-  },
-};
-
-const slides = [
-  {
-    color: '#FFF9CA',
-    content: 
-    <>
-        <Row style={{height: '100vh'}}>
-            <Col className='d-grid justify-content-center align-items-start'>
-                <img style={{width: '50%'}} src='Images/web5.png' />
-            </Col>
-            <Col className='d-grid justify-content-center align-items-start'>
-                <div>
-                    <h1 lang='ar'>Tiltle</h1>
-                    <p lang='ar'>lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls lorem ipsum controls controls</p>
-                </div>
-            </Col>
-        </Row>
-    </>,
-    key:1
-  }, {
-    color: '#0074D9',
-    content: 2,
-    key:2
-  }, {
-    color: '#00c4ff',
-    content: 3,
-    key:3
-  }, {
-    color: '#d52685',
-    content: 4,
-    key:4
-  },
-];
-
-const btnStyles = {
-  position: 'fixed',
-  padding: '8px',
-};
-
-export default function Designs() {
-  if (useLocation().pathname === '/designs') {
-    document.getElementsByTagName('footer').classList='footerD'
-  }
-  const [visibleSlides, setVisibleSlides] = useState(slides);
-  const onHideSlideClick = () => {
-    if (visibleSlides.length === slides.length) {
-      setVisibleSlides(slides.slice(0, -1));
-      return;
-    }
-    setVisibleSlides(slides);
-  };
-
-  return (
-    <>
-    <div>
-      <FullPage controls controlsProps={controlsProps}>
-        {visibleSlides.map(({ color, content }) => (
-          <Slide
-            key={content}
-            style={{
-              background: color, display: 'grid', alignItems: 'center', justifyContent: 'center',position:'relative'
-            }}
-          >
-            {content}
-          </Slide>
-        ))}
-      </FullPage>
+function Designs () {
+    const [logos, setLogos] = useState([
+        { url: 'Images/arab-engineer.webp', website: 'https://www.arab-engineer.com' },
+        { url: 'Images/palanty.webp', website: 'https://www.palanty.com' },
+        // { url: 'Images/aqaba.webp', website: 'app201.website' },
+    ]);
+    const sliderData=logos.map((logo, index) => (
+      <div className="logo-container d-grid justify-items-center justify-content-center align-items-center m-3" key={index}>
+        <img src={logo.url} alt={logo.website} className="logo-img w-75 mb-2"  onClick={e => {window.open(logo.website,'_blank')}} />
+        {/* <a href={logo.website} className="badge badge-pill badge-primary text-center text-decoration-none text-dark text-large">{logo.website}</a> */}
       </div>
-    </>
-  );
-};
+    ))
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 3000,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 500,
+      cssEase:"linear"
+    };
+    return (
+      <div className="portfolio-container my-5">
+        <div className='mx-5 border-4 border-bottom my-5' lang='ar'>
+            <h1 className='' style={{color: 'purple'}}>الأعمال السابقة </h1>
+        </div>
+        <Slider {...settings}>
+        {sliderData}
+          {/* <div>
+            <img src="Images/aqaba.webp" alt="" />
+          </div>
+          <div>
+            <img src="Images/app3.webp" alt="" />
+            
+          </div>
+          <div>
+            <img src="Images/app1.webp" alt="" />
+
+          </div> */}
+          {/* <div>
+                <p>Hi</p>
+                </div>
+                <div>
+                <p>there</p>
+            </div>
+            <div>
+                <p>who</p>
+            </div>
+            <div>
+                <p>you</p>
+              </div> */}
+        </Slider>
+        <div className='mx-5 border-4 border-top my-5' lang='ar'></div>
+      </div>
+    );
+}
+
+export default Designs;

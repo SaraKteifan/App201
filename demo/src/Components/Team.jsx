@@ -17,7 +17,7 @@ function Team() {
                 className="mb-2 d-grid cardT"
                 >
 
-                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/hamza-personal-pic_new.png' style={{width:'70%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/hamza-personal-pic_new.webp' style={{width:'70%',objectFit:'cover',justifySelf:'center'}}/>
 
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
@@ -30,6 +30,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='فيسبوك'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
@@ -39,6 +40,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='انستجرام'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-instagram" />
                             </a>
@@ -48,6 +50,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='لينكدن'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-linkedin-in" />
                             </a> */}
@@ -65,7 +68,7 @@ function Team() {
                 className="mb-2 d-grid cardT"
                 >
 
-                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/Emad-personal-pic-new.png' style={{width:'39.7%',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/Emad-personal-pic-new.webp' style={{width:'40%',objectFit:'cover',justifySelf:'center'}}/>
 
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
@@ -78,6 +81,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='فيسبوك'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
@@ -87,6 +91,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='انستجرام'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-instagram" />
                             </a>
@@ -96,6 +101,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='لينكدن'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-linkedin-in" />
                             </a> */}
@@ -113,7 +119,7 @@ function Team() {
                 className="mb-2 d-grid cardT"
                 >
 
-                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/sara-personal-pic_new.png' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/sara-personal-pic_new.webp' style={{width:'53%',objectFit:'cover',justifySelf:'center'}}/>
 
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
@@ -126,6 +132,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='فيسبوك'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
@@ -135,6 +142,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='انستجرام'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-instagram" />
                             </a>
@@ -144,6 +152,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='لينكدن'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-linkedin-in" />
                             </a> */}
@@ -161,7 +170,7 @@ function Team() {
                 className="mb-2 d-grid border-3 cardT"
                 >
 
-                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/anas-personal-pic_new.png' style={{width:'53%',objectFit: 'cover',objectFit:'cover',justifySelf:'center'}}/>
+                    <Card.Img className='mt-2 imgT' variant="top" src='./Images/anas-personal-pic_new.webp' style={{width:'53%', objectFit:'cover',justifySelf:'center'}}/>
 
                     <Card.Body className='justify-content-center'>
                         <div style={{ display:'grid', justifyItems:'center' }}>
@@ -174,6 +183,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='فيسبوك'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-facebook-f fa-lg" />
                             </a>
@@ -183,6 +193,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='انستجرام'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-instagram" />
                             </a>
@@ -192,6 +203,7 @@ function Team() {
                                 target='_blank'
                                 role="button"
                                 title='لينكدن'
+                                rel="noreferrer"
                             >
                                 <i className="fab fa-linkedin-in" />
                             </a> */}

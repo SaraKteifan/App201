@@ -1,23 +1,18 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './CSS/Navbar.css'
 import {useState, useEffect} from 'react'
 import './CSS/Navbar.css';
-import AnimatedBg from "react-animated-bg";
 import TopButton from './TopButton';
 import WhatsappButton from './WhatsappButton';
-import { Router, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import LocationButton from './LocationButton';
 
 function NavBar() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1400);
   const [navId,setNavId]=useState('navbar');
-  const [navbarLogo, setNavbarLogo]= useState('white-logo.png')
+  const [navbarLogo, setNavbarLogo]= useState('white-logo.webp')
   const [dis,setDis]=useState('none');
   const [scrolling, setScrolling] = useState(false);
 
@@ -27,7 +22,7 @@ function NavBar() {
   const aboutClass= isDesktop && !scrolling? (location.pathname === '/About' ? 'text-white active':'text-white'):(location.pathname === '/About' ? 'text-black active':'text-black');
   const contactClass= isDesktop && !scrolling? (location.pathname === '/Contact' ? 'btn border-white text-white active':'btn border-white text-white'):(location.pathname === '/Contact' ? 'btn border-dark text-black active':'btn border-dark text-black');
   const navbarClass= scrolling ? "mb-3 navbar-white":"mb-3 navbar-dark";
-  const navbarid= scrolling ? "mb-3 navbar-white":"mb-3 navbar-dark";
+  // const navbarid= scrolling ? "mb-3 navbar-white":"mb-3 navbar-dark";
   // const default
   console.log(mainClass);
 
@@ -38,12 +33,12 @@ function NavBar() {
             setDis('block');
             setNavId("navbarScroll");
             setScrolling(true);
-            setNavbarLogo('App201-logo-.png');
+            setNavbarLogo('App201-logo-.webp');
         } else {
             setDis('none');
             setNavId("navbar");
             setScrolling(false);
-            setNavbarLogo('white-logo.png');
+            setNavbarLogo('white-logo.webp');
         }
     }
     
@@ -86,6 +81,7 @@ function NavBar() {
 
                   <Nav.Link href="/" className={mainClass}><h5>الصفحة الرئيسية</h5></Nav.Link>
                   <Nav.Link href="/Services" className={servicesClass}><h5>خدماتنا</h5></Nav.Link>
+                  <Nav.Link href="/Designs" className={servicesClass}><h5>أعمالنا</h5></Nav.Link>
                   <Nav.Link href="/About" className={aboutClass}><h5>من نحن</h5></Nav.Link>
                   <Nav.Link href="/Contact"><h5 className={contactClass} style={{fontSize: '20px'}}>استشرنا لطفاً</h5></Nav.Link>
 

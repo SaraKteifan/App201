@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React from 'react'
 import './CSS/Footer.css'
 
 function Footer(style) {
@@ -18,6 +18,7 @@ function Footer(style) {
                             target='_blank'
                             role="button"
                             title='فيسبوك'
+                            rel="noreferrer"
                         >
                             <i className="fab fa-facebook-f fa-lg" />
                         </a>
@@ -28,6 +29,7 @@ function Footer(style) {
                             target='_blank'
                             role="button"
                             title='واتساب'
+                            rel="noreferrer"
                         >
                             <i className="fab fa-whatsapp" />
                         </a>
@@ -38,6 +40,7 @@ function Footer(style) {
                             target='_blank'
                             role="button"
                             title='البريد الإلكتروني'
+                            rel="noreferrer"
                         >
                             <i className="fab fa-google" />
                         </a>
@@ -48,6 +51,7 @@ function Footer(style) {
                             target='_blank'
                             role="button"
                             title='انستجرام'
+                            rel="noreferrer"
                         >
                             <i className="fab fa-instagram" />
                         </a>
@@ -58,6 +62,7 @@ function Footer(style) {
                             target='_blank'
                             role="button"
                             title='لينكدن'
+                            rel="noreferrer"
                         >
                             <i className="fab fa-linkedin-in" />
                         </a>

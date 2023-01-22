@@ -24,8 +24,8 @@ function Services() {
                 lang='ar'
             >
                 <div className={`image-stack ${isDesktop?'':'d-flex justify-content-center'}`}>
-                    <img className="image-left" src="./Images/app1.png" alt="Image Left" title="Image Left" />
-                    <img className="image-right" src="./Images/app3.png" alt="Image Right" title="Image Left" />
+                    <img className="image-left" src="./Images/app1.webp" alt="Left" title="Image Left" />
+                    <img className="image-right" src="./Images/app3.webp" alt="Right" title="Image Left" />
                 </div>
 
                 <div className="image-stack-text mt-5" >
@@ -46,8 +46,8 @@ function Services() {
                      lg={{ order: 'last'}}
                      >
                         <div className={`image-stack ${isDesktop?'':'d-flex justify-content-center'}`}>
-                            <img className="image-left-middle" src="./Images/web4.png" alt="Image Left" title="Image Left" />
-                            <img className="image-right-middle" src="./Images/web5.png" alt="Image Right" title="Image Left" />
+                            <img className="image-left-middle" src="./Images/web4.webp" alt="Left" title="Image Left" />
+                            <img className="image-right-middle" src="./Images/web5.webp" alt="Right" title="Image Left" />
                         </div></Col>
                     <Col 
                     xs={{ order: 'last' }}
@@ -69,8 +69,8 @@ function Services() {
                 lang='ar'
             >
                 <div className={`image-stack ${isDesktop?'':'d-flex justify-content-center'}`}>
-                    <img className="image-left-last" src="./Images/help1.png" alt="Image Left" title="Image Left" />
-                    <img className="image-right-last" src="./Images/help5.png" alt="Image Right" title="Image Left" />
+                    <img className="image-left-last" src="./Images/help1.webp" alt="Left" title="Image Left" />
+                    <img className="image-right-last" src="./Images/help5.webp" alt="Right" title="Image Left" />
                 </div>
 
                 <div className="image-stack-text">

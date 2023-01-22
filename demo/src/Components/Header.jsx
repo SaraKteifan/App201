@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import './CSS/Header.css';
 import AnimatedText from 'react-animated-text-content';
 
@@ -29,7 +29,7 @@ function Header() {
                     <div class="phone mb-4" id='phonex' onClick={()=>{rotate()}}>
                         <div class="phone_mic"></div>
                         <div class="phone_screen d-flex align-items-center">
-                        <img className='phone-img' id='phonelogo' style={{width:'100%'}} src="./Images/wobg-logo.png" alt="logo" />
+                        <img className='phone-img' id='phonelogo' style={{width:'100%'}} src="./Images/wobg-logo.webp" alt="logo" />
                         </div>
                         <div class="phone_button"></div>
                     </div>

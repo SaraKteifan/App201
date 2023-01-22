@@ -16,6 +16,11 @@
     font-family: 'GESSTwoLight-Light';
     src: url("../public/Fonts/GESSTwoLight-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: sans-serif;
+  src: unset;
+  unicode-range: U+30-39;
+}
 html[dir="rtl"] #menu {
   float: right;
 }
@@ -223,4 +228,88 @@ body{
   50% {
       bottom: 115px;
     }
+}
+@media only screen and (max-width: 426px){
+  .image-left{
+    max-width: none;
+    width: 315px;
+  }
+  .image-right{
+    max-width: none;
+    width: 225px;
+    left: 40%;
+  }
+  .image-left-middle{
+    max-width: none;
+    width: 350px;
+  }
+  .image-right-middle{
+    max-width: none;
+    width: 310px;
+  }
+  .image-left-last{
+    max-width: none;
+    width: 350px;
+  }
+  .image-right-last{
+    max-width: none;
+    width: 310px;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 376px){
+  .image-left{
+    max-width: none;
+    width: 250px;
+  }
+  .image-right{
+    max-width: none;
+    width: 180px;
+    left: 40%;
+  }
+  .image-left-middle{
+    max-width: none;
+    width: 285px;
+  }
+  .image-right-middle{
+    max-width: none;
+    width: 265px;
+  }
+  .image-left-last{
+    max-width: none;
+    width: 285px;
+  }
+  .image-right-last{
+    max-width: none;
+    width: 265px;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 321px){
+  .image-left{
+    max-width: none;
+    width: 215px;
+  }
+  .image-right{
+    max-width: none;
+    width: 155px;
+    left: 40%;
+  }
+  .image-left-middle{
+    max-width: none;
+    width: 245px;
+  }
+  .image-right-middle{
+    max-width: none;
+    width: 225px;
+  }
+  .image-left-last{
+    max-width: none;
+    width: 245px;
+  }
+  .image-right-last{
+    max-width: none;
+    width: 205px;
+    left: 40%;
+  }
 }
