@@ -64,7 +64,7 @@ function NavBar() {
         <Navbar expand='xxl' className={navbarClass} id={navId}>
           {/* <Container> */}
 
-          <Navbar.Brand href="/">
+            <Navbar.Brand href="/">
                 <img src={`./Images/${navbarLogo}`} alt='App201 Logo' id='nav-logo'></img>
             </Navbar.Brand>
 

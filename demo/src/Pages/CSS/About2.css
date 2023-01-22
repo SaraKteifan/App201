@@ -1,0 +1,35 @@
+#about-header{
+    background-image: url("../../../public/Images/IMG_1_.png");
+    padding: 0;
+}
+#about-header #content{ 
+    background-color: rgba(0,0,0,0.3);
+    height: 65vh;
+    padding: 10%;
+    z-index: 1;
+  }
+#about-header h1{
+    font-size: 80px;
+    color: #fff;
+}
+#about-header h5{
+    /* font-size: 40px; */
+    color: #9A5DF0;
+}
+#about-header h5::before{
+    content: "";
+    height: 60px;
+    width: 70px;
+    background-color: #9A5DF0;
+    z-index: 9;
+}
+#about-header h5::before {
+    position: absolute;
+    content: "";
+    width: 75px;
+    height: 1px;
+    background: #9A5DF0;
+    right: 10%;
+    top: 45%;
+    transform: translateY(-50%);
+}
